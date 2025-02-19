@@ -29,41 +29,42 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
+            this.pictureBoxFotoServico3 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxFotoServico2 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxFotoServico = new System.Windows.Forms.PictureBox();
+            this.buttonStatusServico = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.textBoxCodServico = new System.Windows.Forms.TextBox();
+            this.textBoxSms = new System.Windows.Forms.TextBox();
+            this.textBoxProfissional = new System.Windows.Forms.TextBox();
+            this.textBoxPrevRetorno = new System.Windows.Forms.TextBox();
+            this.textBoxValor = new System.Windows.Forms.TextBox();
+            this.textBoxCategoria = new System.Windows.Forms.TextBox();
+            this.textBoxTempo = new System.Windows.Forms.TextBox();
+            this.textBoxServiço = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.richTextBoxDescricao = new System.Windows.Forms.RichTextBox();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFotoServico3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFotoServico2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFotoServico)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.pictureBox3);
-            this.groupBox1.Controls.Add(this.pictureBox2);
-            this.groupBox1.Controls.Add(this.pictureBox1);
-            this.groupBox1.Controls.Add(this.button1);
+            this.groupBox1.Controls.Add(this.richTextBoxDescricao);
+            this.groupBox1.Controls.Add(this.pictureBoxFotoServico3);
+            this.groupBox1.Controls.Add(this.pictureBoxFotoServico2);
+            this.groupBox1.Controls.Add(this.pictureBoxFotoServico);
+            this.groupBox1.Controls.Add(this.buttonStatusServico);
             this.groupBox1.Controls.Add(this.label10);
             this.groupBox1.Controls.Add(this.label9);
             this.groupBox1.Controls.Add(this.label8);
@@ -72,22 +73,209 @@
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.textBox9);
-            this.groupBox1.Controls.Add(this.textBox8);
-            this.groupBox1.Controls.Add(this.textBox7);
-            this.groupBox1.Controls.Add(this.textBox6);
-            this.groupBox1.Controls.Add(this.textBox5);
-            this.groupBox1.Controls.Add(this.textBox4);
-            this.groupBox1.Controls.Add(this.textBox3);
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.textBoxCodServico);
+            this.groupBox1.Controls.Add(this.textBoxSms);
+            this.groupBox1.Controls.Add(this.textBoxProfissional);
+            this.groupBox1.Controls.Add(this.textBoxPrevRetorno);
+            this.groupBox1.Controls.Add(this.textBoxValor);
+            this.groupBox1.Controls.Add(this.textBoxCategoria);
+            this.groupBox1.Controls.Add(this.textBoxTempo);
+            this.groupBox1.Controls.Add(this.textBoxServiço);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(12, 1);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(776, 437);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
+            // 
+            // pictureBoxFotoServico3
+            // 
+            this.pictureBoxFotoServico3.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.pictureBoxFotoServico3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBoxFotoServico3.Location = new System.Drawing.Point(552, 324);
+            this.pictureBoxFotoServico3.Name = "pictureBoxFotoServico3";
+            this.pictureBoxFotoServico3.Size = new System.Drawing.Size(142, 84);
+            this.pictureBoxFotoServico3.TabIndex = 22;
+            this.pictureBoxFotoServico3.TabStop = false;
+            // 
+            // pictureBoxFotoServico2
+            // 
+            this.pictureBoxFotoServico2.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.pictureBoxFotoServico2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBoxFotoServico2.Location = new System.Drawing.Point(552, 188);
+            this.pictureBoxFotoServico2.Name = "pictureBoxFotoServico2";
+            this.pictureBoxFotoServico2.Size = new System.Drawing.Size(142, 84);
+            this.pictureBoxFotoServico2.TabIndex = 21;
+            this.pictureBoxFotoServico2.TabStop = false;
+            // 
+            // pictureBoxFotoServico
+            // 
+            this.pictureBoxFotoServico.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.pictureBoxFotoServico.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBoxFotoServico.Location = new System.Drawing.Point(552, 50);
+            this.pictureBoxFotoServico.Name = "pictureBoxFotoServico";
+            this.pictureBoxFotoServico.Size = new System.Drawing.Size(142, 84);
+            this.pictureBoxFotoServico.TabIndex = 20;
+            this.pictureBoxFotoServico.TabStop = false;
+            // 
+            // buttonStatusServico
+            // 
+            this.buttonStatusServico.BackColor = System.Drawing.SystemColors.ButtonShadow;
+            this.buttonStatusServico.Location = new System.Drawing.Point(153, 403);
+            this.buttonStatusServico.Name = "buttonStatusServico";
+            this.buttonStatusServico.Size = new System.Drawing.Size(140, 28);
+            this.buttonStatusServico.TabIndex = 19;
+            this.buttonStatusServico.Text = "Status de serviço";
+            this.buttonStatusServico.UseVisualStyleBackColor = false;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(3, 324);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(69, 16);
+            this.label10.TabIndex = 18;
+            this.label10.Text = "Descrição";
+            this.label10.Click += new System.EventHandler(this.label10_Click);
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(291, 266);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(97, 16);
+            this.label9.TabIndex = 17;
+            this.label9.Text = "Codigo seviço:";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(6, 132);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(54, 16);
+            this.label8.TabIndex = 16;
+            this.label8.Text = "Tempo:";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(6, 197);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(69, 16);
+            this.label7.TabIndex = 15;
+            this.label7.Text = "Categoria:";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(6, 266);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(42, 16);
+            this.label6.TabIndex = 14;
+            this.label6.Text = "Valor:";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(291, 69);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(80, 16);
+            this.label5.TabIndex = 13;
+            this.label5.Text = "Profissional:";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(291, 132);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(128, 16);
+            this.label4.TabIndex = 12;
+            this.label4.Text = "Previsão de retorno:";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(291, 197);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(144, 16);
+            this.label3.TabIndex = 11;
+            this.label3.Text = "Enviar sms de retorno?";
+            // 
+            // textBoxCodServico
+            // 
+            this.textBoxCodServico.Location = new System.Drawing.Point(294, 282);
+            this.textBoxCodServico.Name = "textBoxCodServico";
+            this.textBoxCodServico.Size = new System.Drawing.Size(139, 22);
+            this.textBoxCodServico.TabIndex = 9;
+            // 
+            // textBoxSms
+            // 
+            this.textBoxSms.Location = new System.Drawing.Point(294, 213);
+            this.textBoxSms.Name = "textBoxSms";
+            this.textBoxSms.Size = new System.Drawing.Size(139, 22);
+            this.textBoxSms.TabIndex = 8;
+            // 
+            // textBoxProfissional
+            // 
+            this.textBoxProfissional.Location = new System.Drawing.Point(294, 85);
+            this.textBoxProfissional.Name = "textBoxProfissional";
+            this.textBoxProfissional.Size = new System.Drawing.Size(139, 22);
+            this.textBoxProfissional.TabIndex = 7;
+            // 
+            // textBoxPrevRetorno
+            // 
+            this.textBoxPrevRetorno.Location = new System.Drawing.Point(294, 148);
+            this.textBoxPrevRetorno.Name = "textBoxPrevRetorno";
+            this.textBoxPrevRetorno.Size = new System.Drawing.Size(139, 22);
+            this.textBoxPrevRetorno.TabIndex = 6;
+            // 
+            // textBoxValor
+            // 
+            this.textBoxValor.Location = new System.Drawing.Point(6, 282);
+            this.textBoxValor.Name = "textBoxValor";
+            this.textBoxValor.Size = new System.Drawing.Size(139, 22);
+            this.textBoxValor.TabIndex = 5;
+            // 
+            // textBoxCategoria
+            // 
+            this.textBoxCategoria.Location = new System.Drawing.Point(6, 213);
+            this.textBoxCategoria.Name = "textBoxCategoria";
+            this.textBoxCategoria.Size = new System.Drawing.Size(139, 22);
+            this.textBoxCategoria.TabIndex = 4;
+            // 
+            // textBoxTempo
+            // 
+            this.textBoxTempo.Location = new System.Drawing.Point(6, 148);
+            this.textBoxTempo.Name = "textBoxTempo";
+            this.textBoxTempo.Size = new System.Drawing.Size(139, 22);
+            this.textBoxTempo.TabIndex = 3;
+            // 
+            // textBoxServiço
+            // 
+            this.textBoxServiço.Location = new System.Drawing.Point(6, 85);
+            this.textBoxServiço.Name = "textBoxServiço";
+            this.textBoxServiço.Size = new System.Drawing.Size(139, 22);
+            this.textBoxServiço.TabIndex = 2;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(6, 69);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(56, 16);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Serviço:";
             // 
             // label1
             // 
@@ -99,190 +287,13 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Cadastro de serviço";
             // 
-            // label2
+            // richTextBoxDescricao
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(6, 83);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(44, 13);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "serviço:";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(6, 99);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(139, 20);
-            this.textBox1.TabIndex = 2;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(6, 162);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(139, 20);
-            this.textBox2.TabIndex = 3;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(6, 227);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(139, 20);
-            this.textBox3.TabIndex = 4;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(6, 296);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(139, 20);
-            this.textBox4.TabIndex = 5;
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(294, 162);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(139, 20);
-            this.textBox5.TabIndex = 6;
-            // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(294, 99);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(139, 20);
-            this.textBox6.TabIndex = 7;
-            // 
-            // textBox7
-            // 
-            this.textBox7.Location = new System.Drawing.Point(294, 227);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(139, 20);
-            this.textBox7.TabIndex = 8;
-            // 
-            // textBox8
-            // 
-            this.textBox8.Location = new System.Drawing.Point(294, 296);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(139, 20);
-            this.textBox8.TabIndex = 9;
-            // 
-            // textBox9
-            // 
-            this.textBox9.Location = new System.Drawing.Point(6, 360);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(427, 20);
-            this.textBox9.TabIndex = 10;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(291, 211);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(115, 13);
-            this.label3.TabIndex = 11;
-            this.label3.Text = "Enviar sms de retorno?";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(291, 146);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(102, 13);
-            this.label4.TabIndex = 12;
-            this.label4.Text = "Previsão de retorno:";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(291, 83);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(63, 13);
-            this.label5.TabIndex = 13;
-            this.label5.Text = "Profissional:";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(6, 280);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(34, 13);
-            this.label6.TabIndex = 14;
-            this.label6.Text = "Valor:";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(6, 211);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(55, 13);
-            this.label7.TabIndex = 15;
-            this.label7.Text = "Categoria:";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(6, 146);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(43, 13);
-            this.label8.TabIndex = 16;
-            this.label8.Text = "Tempo:";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(291, 280);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(77, 13);
-            this.label9.TabIndex = 17;
-            this.label9.Text = "Codigo seviço:";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(6, 344);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(55, 13);
-            this.label10.TabIndex = 18;
-            this.label10.Text = "Descrição";
-            this.label10.Click += new System.EventHandler(this.label10_Click);
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.button1.Location = new System.Drawing.Point(153, 403);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(140, 28);
-            this.button1.TabIndex = 19;
-            this.button1.Text = "Status de serviço";
-            this.button1.UseVisualStyleBackColor = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox1.Location = new System.Drawing.Point(552, 50);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(142, 84);
-            this.pictureBox1.TabIndex = 20;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox2.Location = new System.Drawing.Point(552, 188);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(142, 84);
-            this.pictureBox2.TabIndex = 21;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.pictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox3.Location = new System.Drawing.Point(552, 324);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(142, 84);
-            this.pictureBox3.TabIndex = 22;
-            this.pictureBox3.TabStop = false;
+            this.richTextBoxDescricao.Location = new System.Drawing.Point(0, 340);
+            this.richTextBoxDescricao.Name = "richTextBoxDescricao";
+            this.richTextBoxDescricao.Size = new System.Drawing.Size(433, 57);
+            this.richTextBoxDescricao.TabIndex = 23;
+            this.richTextBoxDescricao.Text = "";
             // 
             // cadastro_de_serviço
             // 
@@ -294,9 +305,9 @@
             this.Text = "cadastro_de_serviço";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFotoServico3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFotoServico2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFotoServico)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -313,19 +324,19 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBoxCodServico;
+        private System.Windows.Forms.TextBox textBoxSms;
+        private System.Windows.Forms.TextBox textBoxProfissional;
+        private System.Windows.Forms.TextBox textBoxPrevRetorno;
+        private System.Windows.Forms.TextBox textBoxValor;
+        private System.Windows.Forms.TextBox textBoxCategoria;
+        private System.Windows.Forms.TextBox textBoxTempo;
+        private System.Windows.Forms.TextBox textBoxServiço;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.PictureBox pictureBoxFotoServico3;
+        private System.Windows.Forms.PictureBox pictureBoxFotoServico2;
+        private System.Windows.Forms.PictureBox pictureBoxFotoServico;
+        private System.Windows.Forms.Button buttonStatusServico;
+        private System.Windows.Forms.RichTextBox richTextBoxDescricao;
     }
 }

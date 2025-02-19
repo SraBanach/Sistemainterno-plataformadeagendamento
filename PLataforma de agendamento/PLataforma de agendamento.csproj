@@ -58,6 +58,24 @@
     <Compile Include="cadastro de serviço.Designer.cs">
       <DependentUpon>cadastro de serviço.cs</DependentUpon>
     </Compile>
+    <Compile Include="cadastroEmpresa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cadastroEmpresa.Designer.cs">
+      <DependentUpon>cadastroEmpresa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CadastroProfissional.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CadastroProfissional.Designer.cs">
+      <DependentUpon>CadastroProfissional.cs</DependentUpon>
+    </Compile>
+    <Compile Include="telaLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="telaLogin.Designer.cs">
+      <DependentUpon>telaLogin.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="tela inicial.cs">
@@ -71,6 +89,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="cadastro de serviço.resx">
       <DependentUpon>cadastro de serviço.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cadastroEmpresa.resx">
+      <DependentUpon>cadastroEmpresa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CadastroProfissional.resx">
+      <DependentUpon>CadastroProfissional.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="telaLogin.resx">
+      <DependentUpon>telaLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
