@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.richTextBoxDescricao = new System.Windows.Forms.RichTextBox();
             this.pictureBoxFotoServico3 = new System.Windows.Forms.PictureBox();
             this.pictureBoxFotoServico2 = new System.Windows.Forms.PictureBox();
             this.pictureBoxFotoServico = new System.Windows.Forms.PictureBox();
@@ -51,7 +52,6 @@
             this.textBoxServiço = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.richTextBoxDescricao = new System.Windows.Forms.RichTextBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFotoServico3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFotoServico2)).BeginInit();
@@ -89,6 +89,14 @@
             this.groupBox1.Size = new System.Drawing.Size(776, 437);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
+            // 
+            // richTextBoxDescricao
+            // 
+            this.richTextBoxDescricao.Location = new System.Drawing.Point(9, 343);
+            this.richTextBoxDescricao.Name = "richTextBoxDescricao";
+            this.richTextBoxDescricao.Size = new System.Drawing.Size(433, 57);
+            this.richTextBoxDescricao.TabIndex = 23;
+            this.richTextBoxDescricao.Text = "";
             // 
             // pictureBoxFotoServico3
             // 
@@ -286,14 +294,6 @@
             this.label1.Size = new System.Drawing.Size(200, 26);
             this.label1.TabIndex = 0;
             this.label1.Text = "Cadastro de serviço";
-            // 
-            // richTextBoxDescricao
-            // 
-            this.richTextBoxDescricao.Location = new System.Drawing.Point(0, 340);
-            this.richTextBoxDescricao.Name = "richTextBoxDescricao";
-            this.richTextBoxDescricao.Size = new System.Drawing.Size(433, 57);
-            this.richTextBoxDescricao.TabIndex = 23;
-            this.richTextBoxDescricao.Text = "";
             // 
             // cadastro_de_serviço
             // 
