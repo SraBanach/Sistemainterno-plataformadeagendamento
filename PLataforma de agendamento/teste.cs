@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace PLataforma_de_agendamento
 {
-    public partial class tela_inicial : Form
+    public partial class teste : Form
     {
-        public tela_inicial()
+        public teste()
         {
             InitializeComponent();
         }

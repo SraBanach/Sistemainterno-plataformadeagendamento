@@ -78,11 +78,17 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="tela inicial.cs">
+    <Compile Include="tela_inicial.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="tela inicial.Designer.cs">
-      <DependentUpon>tela inicial.cs</DependentUpon>
+    <Compile Include="tela_inicial.Designer.cs">
+      <DependentUpon>tela_inicial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="teste.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="teste.Designer.cs">
+      <DependentUpon>teste.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="..\..\..\..\OneDrive - SENAC - SP\PI - programação\Sistema interno.resx">
       <DependentUpon>Sistema interno.cs</DependentUpon>
@@ -108,8 +114,8 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="tela inicial.resx">
-      <DependentUpon>tela inicial.cs</DependentUpon>
+    <EmbeddedResource Include="tela_inicial.resx">
+      <DependentUpon>tela_inicial.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
