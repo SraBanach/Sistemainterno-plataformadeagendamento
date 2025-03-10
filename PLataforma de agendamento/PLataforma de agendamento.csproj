@@ -46,12 +46,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="..\..\..\..\OneDrive - SENAC - SP\PI - programação\Sistema interno.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="..\..\..\..\OneDrive - SENAC - SP\PI - programação\Sistema interno.Designer.cs">
-      <DependentUpon>Sistema interno.cs</DependentUpon>
-    </Compile>
     <Compile Include="cadastro de serviço.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -84,15 +78,6 @@
     <Compile Include="tela_inicial.Designer.cs">
       <DependentUpon>tela_inicial.cs</DependentUpon>
     </Compile>
-    <Compile Include="teste.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="teste.Designer.cs">
-      <DependentUpon>teste.cs</DependentUpon>
-    </Compile>
-    <EmbeddedResource Include="..\..\..\..\OneDrive - SENAC - SP\PI - programação\Sistema interno.resx">
-      <DependentUpon>Sistema interno.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="cadastro de serviço.resx">
       <DependentUpon>cadastro de serviço.cs</DependentUpon>
     </EmbeddedResource>
