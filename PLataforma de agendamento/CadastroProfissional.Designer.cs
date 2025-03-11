@@ -36,20 +36,18 @@
             this.buttonConfirmar = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textBoxCodProfissional = new System.Windows.Forms.TextBox();
             this.textBoxArea = new System.Windows.Forms.TextBox();
             this.textBoxCertificado = new System.Windows.Forms.TextBox();
             this.textBoxTelefone = new System.Windows.Forms.TextBox();
-            this.textBoxEnredeco = new System.Windows.Forms.TextBox();
             this.textBoxIdade = new System.Windows.Forms.TextBox();
             this.textBoxNome = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.textBoxCpf = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFotoProfissional3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFotoProfissional2)).BeginInit();
@@ -58,6 +56,8 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.label3);
+            this.groupBox1.Controls.Add(this.textBoxCpf);
             this.groupBox1.Controls.Add(this.richTextBoxAnotaçoes);
             this.groupBox1.Controls.Add(this.pictureBoxFotoProfissional3);
             this.groupBox1.Controls.Add(this.pictureBoxFotoProfissional2);
@@ -65,16 +65,12 @@
             this.groupBox1.Controls.Add(this.buttonConfirmar);
             this.groupBox1.Controls.Add(this.label10);
             this.groupBox1.Controls.Add(this.label8);
-            this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.textBoxCodProfissional);
             this.groupBox1.Controls.Add(this.textBoxArea);
             this.groupBox1.Controls.Add(this.textBoxCertificado);
             this.groupBox1.Controls.Add(this.textBoxTelefone);
-            this.groupBox1.Controls.Add(this.textBoxEnredeco);
             this.groupBox1.Controls.Add(this.textBoxIdade);
             this.groupBox1.Controls.Add(this.textBoxNome);
             this.groupBox1.Controls.Add(this.label2);
@@ -150,25 +146,15 @@
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(6, 132);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(45, 16);
+            this.label8.Size = new System.Drawing.Size(130, 16);
             this.label8.TabIndex = 16;
-            this.label8.Text = "Idade:";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(6, 197);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(69, 16);
-            this.label7.TabIndex = 15;
-            this.label7.Text = "Endereço:";
+            this.label8.Text = "Data de nascimento:";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(6, 266);
+            this.label6.Location = new System.Drawing.Point(3, 256);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(64, 16);
             this.label6.TabIndex = 14;
@@ -194,23 +180,6 @@
             this.label4.TabIndex = 12;
             this.label4.Text = "Certificados:";
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(261, 232);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(57, 16);
-            this.label3.TabIndex = 11;
-            this.label3.Text = "Código: ";
-            // 
-            // textBoxCodProfissional
-            // 
-            this.textBoxCodProfissional.Location = new System.Drawing.Point(264, 248);
-            this.textBoxCodProfissional.Name = "textBoxCodProfissional";
-            this.textBoxCodProfissional.Size = new System.Drawing.Size(139, 22);
-            this.textBoxCodProfissional.TabIndex = 8;
-            // 
             // textBoxArea
             // 
             this.textBoxArea.Location = new System.Drawing.Point(264, 120);
@@ -227,17 +196,10 @@
             // 
             // textBoxTelefone
             // 
-            this.textBoxTelefone.Location = new System.Drawing.Point(6, 282);
+            this.textBoxTelefone.Location = new System.Drawing.Point(3, 272);
             this.textBoxTelefone.Name = "textBoxTelefone";
             this.textBoxTelefone.Size = new System.Drawing.Size(139, 22);
             this.textBoxTelefone.TabIndex = 5;
-            // 
-            // textBoxEnredeco
-            // 
-            this.textBoxEnredeco.Location = new System.Drawing.Point(6, 213);
-            this.textBoxEnredeco.Name = "textBoxEnredeco";
-            this.textBoxEnredeco.Size = new System.Drawing.Size(139, 22);
-            this.textBoxEnredeco.TabIndex = 4;
             // 
             // textBoxIdade
             // 
@@ -273,6 +235,23 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Cadastro de Profissionais";
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(6, 198);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(36, 16);
+            this.label3.TabIndex = 25;
+            this.label3.Text = "CPF:";
+            // 
+            // textBoxCpf
+            // 
+            this.textBoxCpf.Location = new System.Drawing.Point(6, 214);
+            this.textBoxCpf.Name = "textBoxCpf";
+            this.textBoxCpf.Size = new System.Drawing.Size(139, 22);
+            this.textBoxCpf.TabIndex = 24;
+            // 
             // CadastroProfissional
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -301,19 +280,17 @@
         private System.Windows.Forms.Button buttonConfirmar;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBoxCodProfissional;
         private System.Windows.Forms.TextBox textBoxArea;
         private System.Windows.Forms.TextBox textBoxCertificado;
         private System.Windows.Forms.TextBox textBoxTelefone;
-        private System.Windows.Forms.TextBox textBoxEnredeco;
         private System.Windows.Forms.TextBox textBoxIdade;
         private System.Windows.Forms.TextBox textBoxNome;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox textBoxCpf;
     }
 }

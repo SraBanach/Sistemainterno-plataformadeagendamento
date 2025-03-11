@@ -35,14 +35,12 @@
             this.pictureBoxFotoServico = new System.Windows.Forms.PictureBox();
             this.buttonStatusServico = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBoxCodServico = new System.Windows.Forms.TextBox();
             this.textBoxSms = new System.Windows.Forms.TextBox();
             this.textBoxProfissional = new System.Windows.Forms.TextBox();
             this.textBoxPrevRetorno = new System.Windows.Forms.TextBox();
@@ -66,14 +64,12 @@
             this.groupBox1.Controls.Add(this.pictureBoxFotoServico);
             this.groupBox1.Controls.Add(this.buttonStatusServico);
             this.groupBox1.Controls.Add(this.label10);
-            this.groupBox1.Controls.Add(this.label9);
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.textBoxCodServico);
             this.groupBox1.Controls.Add(this.textBoxSms);
             this.groupBox1.Controls.Add(this.textBoxProfissional);
             this.groupBox1.Controls.Add(this.textBoxPrevRetorno);
@@ -149,16 +145,6 @@
             this.label10.Text = "Descrição";
             this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(291, 266);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(97, 16);
-            this.label9.TabIndex = 17;
-            this.label9.Text = "Codigo seviço:";
-            // 
             // label8
             // 
             this.label8.AutoSize = true;
@@ -218,13 +204,6 @@
             this.label3.Size = new System.Drawing.Size(144, 16);
             this.label3.TabIndex = 11;
             this.label3.Text = "Enviar sms de retorno?";
-            // 
-            // textBoxCodServico
-            // 
-            this.textBoxCodServico.Location = new System.Drawing.Point(294, 282);
-            this.textBoxCodServico.Name = "textBoxCodServico";
-            this.textBoxCodServico.Size = new System.Drawing.Size(139, 22);
-            this.textBoxCodServico.TabIndex = 9;
             // 
             // textBoxSms
             // 
@@ -317,14 +296,12 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBoxCodServico;
         private System.Windows.Forms.TextBox textBoxSms;
         private System.Windows.Forms.TextBox textBoxProfissional;
         private System.Windows.Forms.TextBox textBoxPrevRetorno;

@@ -49,21 +49,21 @@
             this.textBoxEstado = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBoxNome = new System.Windows.Forms.TextBox();
+            this.textBoxRazaoSocial = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBoxNomeFantasia = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBoxTelefone = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBoxNomeContato = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBoxCep = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBoxComplemento = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.textBoxCnpj = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFotoEmpresa3)).BeginInit();
@@ -74,19 +74,19 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.label16);
-            this.groupBox1.Controls.Add(this.textBox6);
+            this.groupBox1.Controls.Add(this.textBoxCnpj);
             this.groupBox1.Controls.Add(this.label15);
-            this.groupBox1.Controls.Add(this.textBox5);
-            this.groupBox1.Controls.Add(this.textBox4);
+            this.groupBox1.Controls.Add(this.textBoxComplemento);
+            this.groupBox1.Controls.Add(this.textBoxCep);
             this.groupBox1.Controls.Add(this.label14);
             this.groupBox1.Controls.Add(this.label13);
             this.groupBox1.Controls.Add(this.label12);
-            this.groupBox1.Controls.Add(this.textBox3);
+            this.groupBox1.Controls.Add(this.textBoxNomeContato);
             this.groupBox1.Controls.Add(this.label11);
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.textBoxTelefone);
+            this.groupBox1.Controls.Add(this.textBoxNomeFantasia);
             this.groupBox1.Controls.Add(this.label9);
-            this.groupBox1.Controls.Add(this.textBoxNome);
+            this.groupBox1.Controls.Add(this.textBoxRazaoSocial);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.pictureBoxLogo);
             this.groupBox1.Controls.Add(this.richTextBoxSobreEmpresa);
@@ -166,7 +166,7 @@
             // buttonStatusServico
             // 
             this.buttonStatusServico.BackColor = System.Drawing.SystemColors.ButtonShadow;
-            this.buttonStatusServico.Location = new System.Drawing.Point(150, 466);
+            this.buttonStatusServico.Location = new System.Drawing.Point(372, 466);
             this.buttonStatusServico.Name = "buttonStatusServico";
             this.buttonStatusServico.Size = new System.Drawing.Size(140, 28);
             this.buttonStatusServico.TabIndex = 19;
@@ -296,12 +296,12 @@
             this.label1.Text = "Cadastro da Empresa";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // textBoxNome
+            // textBoxRazaoSocial
             // 
-            this.textBoxNome.Location = new System.Drawing.Point(6, 96);
-            this.textBoxNome.Name = "textBoxNome";
-            this.textBoxNome.Size = new System.Drawing.Size(400, 22);
-            this.textBoxNome.TabIndex = 26;
+            this.textBoxRazaoSocial.Location = new System.Drawing.Point(6, 96);
+            this.textBoxRazaoSocial.Name = "textBoxRazaoSocial";
+            this.textBoxRazaoSocial.Size = new System.Drawing.Size(400, 22);
+            this.textBoxRazaoSocial.TabIndex = 26;
             // 
             // label3
             // 
@@ -313,12 +313,12 @@
             this.label3.TabIndex = 25;
             this.label3.Text = "Razão social:";
             // 
-            // textBox1
+            // textBoxNomeFantasia
             // 
-            this.textBox1.Location = new System.Drawing.Point(6, 152);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(400, 22);
-            this.textBox1.TabIndex = 28;
+            this.textBoxNomeFantasia.Location = new System.Drawing.Point(6, 152);
+            this.textBoxNomeFantasia.Name = "textBoxNomeFantasia";
+            this.textBoxNomeFantasia.Size = new System.Drawing.Size(400, 22);
+            this.textBoxNomeFantasia.TabIndex = 28;
             // 
             // label9
             // 
@@ -340,12 +340,12 @@
             this.label11.TabIndex = 30;
             this.label11.Text = "Telefone:";
             // 
-            // textBox2
+            // textBoxTelefone
             // 
-            this.textBox2.Location = new System.Drawing.Point(244, 224);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(161, 22);
-            this.textBox2.TabIndex = 29;
+            this.textBoxTelefone.Location = new System.Drawing.Point(244, 224);
+            this.textBoxTelefone.Name = "textBoxTelefone";
+            this.textBoxTelefone.Size = new System.Drawing.Size(161, 22);
+            this.textBoxTelefone.TabIndex = 29;
             // 
             // label12
             // 
@@ -357,12 +357,12 @@
             this.label12.TabIndex = 32;
             this.label12.Text = "Nome Contato:";
             // 
-            // textBox3
+            // textBoxNomeContato
             // 
-            this.textBox3.Location = new System.Drawing.Point(245, 280);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(160, 22);
-            this.textBox3.TabIndex = 31;
+            this.textBoxNomeContato.Location = new System.Drawing.Point(245, 280);
+            this.textBoxNomeContato.Name = "textBoxNomeContato";
+            this.textBoxNomeContato.Size = new System.Drawing.Size(160, 22);
+            this.textBoxNomeContato.TabIndex = 31;
             // 
             // label13
             // 
@@ -374,12 +374,12 @@
             this.label13.TabIndex = 33;
             this.label13.Text = "Endereço:";
             // 
-            // textBox4
+            // textBoxCep
             // 
-            this.textBox4.Location = new System.Drawing.Point(524, 121);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(139, 22);
-            this.textBox4.TabIndex = 35;
+            this.textBoxCep.Location = new System.Drawing.Point(524, 121);
+            this.textBoxCep.Name = "textBoxCep";
+            this.textBoxCep.Size = new System.Drawing.Size(139, 22);
+            this.textBoxCep.TabIndex = 35;
             // 
             // label14
             // 
@@ -402,12 +402,12 @@
             this.label15.TabIndex = 37;
             this.label15.Text = "Complemento:";
             // 
-            // textBox5
+            // textBoxComplemento
             // 
-            this.textBox5.Location = new System.Drawing.Point(524, 370);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(332, 22);
-            this.textBox5.TabIndex = 36;
+            this.textBoxComplemento.Location = new System.Drawing.Point(524, 370);
+            this.textBoxComplemento.Name = "textBoxComplemento";
+            this.textBoxComplemento.Size = new System.Drawing.Size(332, 22);
+            this.textBoxComplemento.TabIndex = 36;
             // 
             // label16
             // 
@@ -419,12 +419,12 @@
             this.label16.TabIndex = 39;
             this.label16.Text = "CNPJ:";
             // 
-            // textBox6
+            // textBoxCnpj
             // 
-            this.textBox6.Location = new System.Drawing.Point(9, 199);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(161, 22);
-            this.textBox6.TabIndex = 38;
+            this.textBoxCnpj.Location = new System.Drawing.Point(9, 199);
+            this.textBoxCnpj.Name = "textBoxCnpj";
+            this.textBoxCnpj.Size = new System.Drawing.Size(161, 22);
+            this.textBoxCnpj.TabIndex = 38;
             // 
             // cadastroEmpresa
             // 
@@ -467,20 +467,20 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBoxLogo;
-        private System.Windows.Forms.TextBox textBoxNome;
+        private System.Windows.Forms.TextBox textBoxRazaoSocial;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBoxTelefone;
+        private System.Windows.Forms.TextBox textBoxNomeFantasia;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox textBoxCep;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBoxNomeContato;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox textBoxCnpj;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox textBoxComplemento;
     }
 }
