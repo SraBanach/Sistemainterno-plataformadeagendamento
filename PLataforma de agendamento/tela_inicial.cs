@@ -21,5 +21,10 @@ namespace PLataforma_de_agendamento
         {
 
         }
+
+        private void buttonCadastroSalao_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

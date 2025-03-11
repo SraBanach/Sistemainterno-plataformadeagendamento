@@ -30,15 +30,17 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.dataGridViewCalendario = new System.Windows.Forms.DataGridView();
             this.buttonBancoClientes = new System.Windows.Forms.Button();
             this.buttonCadastroProfissionais = new System.Windows.Forms.Button();
             this.buttonMinhaAgenda = new System.Windows.Forms.Button();
             this.buttonCadastroServico = new System.Windows.Forms.Button();
             this.buttonCadastroSalao = new System.Windows.Forms.Button();
             this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
-            this.dataGridViewCalendario = new System.Windows.Forms.DataGridView();
+            this.dataGridView = new System.Windows.Forms.DataGridView();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCalendario)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -53,6 +55,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.dataGridView);
             this.groupBox1.Controls.Add(this.dataGridViewCalendario);
             this.groupBox1.Controls.Add(this.buttonBancoClientes);
             this.groupBox1.Controls.Add(this.buttonCadastroProfissionais);
@@ -63,9 +66,17 @@
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(776, 426);
+            this.groupBox1.Size = new System.Drawing.Size(1134, 712);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
+            // 
+            // dataGridViewCalendario
+            // 
+            this.dataGridViewCalendario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewCalendario.Location = new System.Drawing.Point(245, 45);
+            this.dataGridViewCalendario.Name = "dataGridViewCalendario";
+            this.dataGridViewCalendario.Size = new System.Drawing.Size(0, 0);
+            this.dataGridViewCalendario.TabIndex = 7;
             // 
             // buttonBancoClientes
             // 
@@ -116,6 +127,7 @@
             this.buttonCadastroSalao.TabIndex = 2;
             this.buttonCadastroSalao.Text = "Cadastro do salão";
             this.buttonCadastroSalao.UseVisualStyleBackColor = false;
+            this.buttonCadastroSalao.Click += new System.EventHandler(this.buttonCadastroSalao_Click);
             // 
             // monthCalendar1
             // 
@@ -123,25 +135,28 @@
             this.monthCalendar1.Name = "monthCalendar1";
             this.monthCalendar1.TabIndex = 1;
             // 
-            // dataGridViewCalendario
+            // dataGridView
             // 
-            this.dataGridViewCalendario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewCalendario.Location = new System.Drawing.Point(245, 45);
-            this.dataGridViewCalendario.Name = "dataGridViewCalendario";
-            this.dataGridViewCalendario.Size = new System.Drawing.Size(525, 375);
-            this.dataGridViewCalendario.TabIndex = 7;
+            this.dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView.Location = new System.Drawing.Point(241, 46);
+            this.dataGridView.Name = "dataGridView";
+            this.dataGridView.Size = new System.Drawing.Size(893, 677);
+            this.dataGridView.TabIndex = 8;
             // 
             // tela_inicial
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1124, 704);
             this.Controls.Add(this.groupBox1);
             this.Name = "tela_inicial";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "tela_inicial";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCalendario)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -157,5 +172,6 @@
         private System.Windows.Forms.Button buttonCadastroServico;
         private System.Windows.Forms.Button buttonCadastroSalao;
         private System.Windows.Forms.DataGridView dataGridViewCalendario;
+        private System.Windows.Forms.DataGridView dataGridView;
     }
 }
