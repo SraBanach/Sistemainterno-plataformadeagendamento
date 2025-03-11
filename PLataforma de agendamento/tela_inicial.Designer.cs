@@ -97,6 +97,7 @@
             this.buttonCadastroProfissionais.TabIndex = 5;
             this.buttonCadastroProfissionais.Text = "Cadastro de profissionais";
             this.buttonCadastroProfissionais.UseVisualStyleBackColor = false;
+            this.buttonCadastroProfissionais.Click += new System.EventHandler(this.buttonCadastroProfissionais_Click);
             // 
             // buttonMinhaAgenda
             // 
@@ -117,6 +118,7 @@
             this.buttonCadastroServico.TabIndex = 3;
             this.buttonCadastroServico.Text = "Cadastro de serviço";
             this.buttonCadastroServico.UseVisualStyleBackColor = false;
+            this.buttonCadastroServico.Click += new System.EventHandler(this.buttonCadastroServico_Click);
             // 
             // buttonCadastroSalao
             // 

@@ -24,7 +24,20 @@ namespace PLataforma_de_agendamento
 
         private void buttonCadastroSalao_Click(object sender, EventArgs e)
         {
+            cadastroEmpresa form = new cadastroEmpresa();
+            form.ShowDialog(); 
+        }
 
+        private void buttonCadastroServico_Click(object sender, EventArgs e)
+        {
+            cadastro_de_serviço form = new cadastro_de_serviço();
+            form.ShowDialog();
+        }
+
+        private void buttonCadastroProfissionais_Click(object sender, EventArgs e)
+        {
+            CadastroProfissional form = new CadastroProfissional();
+            form.ShowDialog();
         }
     }
 }

@@ -46,11 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="cadastro de serviço.cs">
+    <Compile Include="cadastroServico.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="cadastro de serviço.Designer.cs">
-      <DependentUpon>cadastro de serviço.cs</DependentUpon>
+    <Compile Include="cadastroServico.Designer.cs">
+      <DependentUpon>cadastroServico.cs</DependentUpon>
     </Compile>
     <Compile Include="cadastroEmpresa.cs">
       <SubType>Form</SubType>
@@ -78,8 +78,8 @@
     <Compile Include="tela_inicial.Designer.cs">
       <DependentUpon>tela_inicial.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="cadastro de serviço.resx">
-      <DependentUpon>cadastro de serviço.cs</DependentUpon>
+    <EmbeddedResource Include="cadastroServico.resx">
+      <DependentUpon>cadastroServico.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="cadastroEmpresa.resx">
       <DependentUpon>cadastroEmpresa.cs</DependentUpon>
