@@ -29,10 +29,11 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.richTextBoxAnotaçoes = new System.Windows.Forms.RichTextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.richTextBoxAnotacoes = new System.Windows.Forms.RichTextBox();
             this.pictureBoxFotoProfissional3 = new System.Windows.Forms.PictureBox();
             this.pictureBoxFotoProfissional2 = new System.Windows.Forms.PictureBox();
-            this.pictureBoxFotoProfissional = new System.Windows.Forms.PictureBox();
+            this.pictureBoxFotoProfissional1 = new System.Windows.Forms.PictureBox();
             this.buttonConfirmar = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -41,27 +42,36 @@
             this.label4 = new System.Windows.Forms.Label();
             this.textBoxArea = new System.Windows.Forms.TextBox();
             this.textBoxCertificado = new System.Windows.Forms.TextBox();
-            this.textBoxTelefone = new System.Windows.Forms.TextBox();
-            this.textBoxIdade = new System.Windows.Forms.TextBox();
             this.textBoxNome = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textBoxCpf = new System.Windows.Forms.TextBox();
+            this.maskedTextBoxCPF = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBoxDatNasc = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBoxTel = new System.Windows.Forms.MaskedTextBox();
+            this.labelAlertCpf = new System.Windows.Forms.Label();
+            this.buttonAdicionarFoto1 = new System.Windows.Forms.Button();
+            this.buttonAdicionarFoto2 = new System.Windows.Forms.Button();
+            this.buttonAdicionarFoto3 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFotoProfissional3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFotoProfissional2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFotoProfissional)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFotoProfissional1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.buttonAdicionarFoto3);
+            this.groupBox1.Controls.Add(this.buttonAdicionarFoto2);
+            this.groupBox1.Controls.Add(this.buttonAdicionarFoto1);
+            this.groupBox1.Controls.Add(this.labelAlertCpf);
+            this.groupBox1.Controls.Add(this.maskedTextBoxTel);
+            this.groupBox1.Controls.Add(this.maskedTextBoxDatNasc);
+            this.groupBox1.Controls.Add(this.maskedTextBoxCPF);
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.textBoxCpf);
-            this.groupBox1.Controls.Add(this.richTextBoxAnotaçoes);
+            this.groupBox1.Controls.Add(this.richTextBoxAnotacoes);
             this.groupBox1.Controls.Add(this.pictureBoxFotoProfissional3);
             this.groupBox1.Controls.Add(this.pictureBoxFotoProfissional2);
-            this.groupBox1.Controls.Add(this.pictureBoxFotoProfissional);
+            this.groupBox1.Controls.Add(this.pictureBoxFotoProfissional1);
             this.groupBox1.Controls.Add(this.buttonConfirmar);
             this.groupBox1.Controls.Add(this.label10);
             this.groupBox1.Controls.Add(this.label8);
@@ -70,8 +80,6 @@
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.textBoxArea);
             this.groupBox1.Controls.Add(this.textBoxCertificado);
-            this.groupBox1.Controls.Add(this.textBoxTelefone);
-            this.groupBox1.Controls.Add(this.textBoxIdade);
             this.groupBox1.Controls.Add(this.textBoxNome);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
@@ -82,13 +90,23 @@
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             // 
-            // richTextBoxAnotaçoes
+            // label3
             // 
-            this.richTextBoxAnotaçoes.Location = new System.Drawing.Point(0, 340);
-            this.richTextBoxAnotaçoes.Name = "richTextBoxAnotaçoes";
-            this.richTextBoxAnotaçoes.Size = new System.Drawing.Size(433, 57);
-            this.richTextBoxAnotaçoes.TabIndex = 23;
-            this.richTextBoxAnotaçoes.Text = "";
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(6, 198);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(36, 16);
+            this.label3.TabIndex = 25;
+            this.label3.Text = "CPF:";
+            // 
+            // richTextBoxAnotacoes
+            // 
+            this.richTextBoxAnotacoes.Location = new System.Drawing.Point(0, 340);
+            this.richTextBoxAnotacoes.Name = "richTextBoxAnotacoes";
+            this.richTextBoxAnotacoes.Size = new System.Drawing.Size(433, 57);
+            this.richTextBoxAnotacoes.TabIndex = 23;
+            this.richTextBoxAnotacoes.Text = "";
             // 
             // pictureBoxFotoProfissional3
             // 
@@ -110,15 +128,15 @@
             this.pictureBoxFotoProfissional2.TabIndex = 21;
             this.pictureBoxFotoProfissional2.TabStop = false;
             // 
-            // pictureBoxFotoProfissional
+            // pictureBoxFotoProfissional1
             // 
-            this.pictureBoxFotoProfissional.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.pictureBoxFotoProfissional.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBoxFotoProfissional.Location = new System.Drawing.Point(552, 50);
-            this.pictureBoxFotoProfissional.Name = "pictureBoxFotoProfissional";
-            this.pictureBoxFotoProfissional.Size = new System.Drawing.Size(142, 84);
-            this.pictureBoxFotoProfissional.TabIndex = 20;
-            this.pictureBoxFotoProfissional.TabStop = false;
+            this.pictureBoxFotoProfissional1.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.pictureBoxFotoProfissional1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBoxFotoProfissional1.Location = new System.Drawing.Point(552, 50);
+            this.pictureBoxFotoProfissional1.Name = "pictureBoxFotoProfissional1";
+            this.pictureBoxFotoProfissional1.Size = new System.Drawing.Size(142, 84);
+            this.pictureBoxFotoProfissional1.TabIndex = 20;
+            this.pictureBoxFotoProfissional1.TabStop = false;
             // 
             // buttonConfirmar
             // 
@@ -129,6 +147,7 @@
             this.buttonConfirmar.TabIndex = 19;
             this.buttonConfirmar.Text = "Confirmar";
             this.buttonConfirmar.UseVisualStyleBackColor = false;
+            this.buttonConfirmar.Click += new System.EventHandler(this.buttonConfirmar_Click);
             // 
             // label10
             // 
@@ -194,20 +213,6 @@
             this.textBoxCertificado.Size = new System.Drawing.Size(139, 22);
             this.textBoxCertificado.TabIndex = 6;
             // 
-            // textBoxTelefone
-            // 
-            this.textBoxTelefone.Location = new System.Drawing.Point(3, 272);
-            this.textBoxTelefone.Name = "textBoxTelefone";
-            this.textBoxTelefone.Size = new System.Drawing.Size(139, 22);
-            this.textBoxTelefone.TabIndex = 5;
-            // 
-            // textBoxIdade
-            // 
-            this.textBoxIdade.Location = new System.Drawing.Point(6, 148);
-            this.textBoxIdade.Name = "textBoxIdade";
-            this.textBoxIdade.Size = new System.Drawing.Size(139, 22);
-            this.textBoxIdade.TabIndex = 3;
-            // 
             // textBoxNome
             // 
             this.textBoxNome.Location = new System.Drawing.Point(6, 85);
@@ -235,22 +240,67 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Cadastro de Profissionais";
             // 
-            // label3
+            // maskedTextBoxCPF
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(6, 198);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(36, 16);
-            this.label3.TabIndex = 25;
-            this.label3.Text = "CPF:";
+            this.maskedTextBoxCPF.Location = new System.Drawing.Point(6, 217);
+            this.maskedTextBoxCPF.Mask = "000.000.000-00";
+            this.maskedTextBoxCPF.Name = "maskedTextBoxCPF";
+            this.maskedTextBoxCPF.Size = new System.Drawing.Size(139, 22);
+            this.maskedTextBoxCPF.TabIndex = 26;
             // 
-            // textBoxCpf
+            // maskedTextBoxDatNasc
             // 
-            this.textBoxCpf.Location = new System.Drawing.Point(6, 214);
-            this.textBoxCpf.Name = "textBoxCpf";
-            this.textBoxCpf.Size = new System.Drawing.Size(139, 22);
-            this.textBoxCpf.TabIndex = 24;
+            this.maskedTextBoxDatNasc.Location = new System.Drawing.Point(6, 151);
+            this.maskedTextBoxDatNasc.Mask = "00/00/0000";
+            this.maskedTextBoxDatNasc.Name = "maskedTextBoxDatNasc";
+            this.maskedTextBoxDatNasc.Size = new System.Drawing.Size(139, 22);
+            this.maskedTextBoxDatNasc.TabIndex = 27;
+            // 
+            // maskedTextBoxTel
+            // 
+            this.maskedTextBoxTel.Location = new System.Drawing.Point(9, 275);
+            this.maskedTextBoxTel.Mask = "(00)00000-0000";
+            this.maskedTextBoxTel.Name = "maskedTextBoxTel";
+            this.maskedTextBoxTel.Size = new System.Drawing.Size(139, 22);
+            this.maskedTextBoxTel.TabIndex = 28;
+            // 
+            // labelAlertCpf
+            // 
+            this.labelAlertCpf.AutoSize = true;
+            this.labelAlertCpf.Location = new System.Drawing.Point(151, 223);
+            this.labelAlertCpf.Name = "labelAlertCpf";
+            this.labelAlertCpf.Size = new System.Drawing.Size(0, 16);
+            this.labelAlertCpf.TabIndex = 29;
+            // 
+            // buttonAdicionarFoto1
+            // 
+            this.buttonAdicionarFoto1.Location = new System.Drawing.Point(578, 120);
+            this.buttonAdicionarFoto1.Name = "buttonAdicionarFoto1";
+            this.buttonAdicionarFoto1.Size = new System.Drawing.Size(84, 42);
+            this.buttonAdicionarFoto1.TabIndex = 30;
+            this.buttonAdicionarFoto1.Text = "Adicionar Foto";
+            this.buttonAdicionarFoto1.UseVisualStyleBackColor = true;
+            this.buttonAdicionarFoto1.Click += new System.EventHandler(this.buttonAdicionarFoto1_Click);
+            // 
+            // buttonAdicionarFoto2
+            // 
+            this.buttonAdicionarFoto2.Location = new System.Drawing.Point(578, 256);
+            this.buttonAdicionarFoto2.Name = "buttonAdicionarFoto2";
+            this.buttonAdicionarFoto2.Size = new System.Drawing.Size(84, 42);
+            this.buttonAdicionarFoto2.TabIndex = 31;
+            this.buttonAdicionarFoto2.Text = "Adicionar Foto";
+            this.buttonAdicionarFoto2.UseVisualStyleBackColor = true;
+            this.buttonAdicionarFoto2.Click += new System.EventHandler(this.buttonAdicionarFoto2_Click);
+            // 
+            // buttonAdicionarFoto3
+            // 
+            this.buttonAdicionarFoto3.Location = new System.Drawing.Point(587, 395);
+            this.buttonAdicionarFoto3.Name = "buttonAdicionarFoto3";
+            this.buttonAdicionarFoto3.Size = new System.Drawing.Size(84, 42);
+            this.buttonAdicionarFoto3.TabIndex = 32;
+            this.buttonAdicionarFoto3.Text = "Adicionar Foto";
+            this.buttonAdicionarFoto3.UseVisualStyleBackColor = true;
+            this.buttonAdicionarFoto3.Click += new System.EventHandler(this.buttonAdicionarFoto3_Click);
             // 
             // CadastroProfissional
             // 
@@ -265,7 +315,7 @@
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFotoProfissional3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFotoProfissional2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFotoProfissional)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFotoProfissional1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -273,10 +323,10 @@
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.RichTextBox richTextBoxAnotaçoes;
+        private System.Windows.Forms.RichTextBox richTextBoxAnotacoes;
         private System.Windows.Forms.PictureBox pictureBoxFotoProfissional3;
         private System.Windows.Forms.PictureBox pictureBoxFotoProfissional2;
-        private System.Windows.Forms.PictureBox pictureBoxFotoProfissional;
+        private System.Windows.Forms.PictureBox pictureBoxFotoProfissional1;
         private System.Windows.Forms.Button buttonConfirmar;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label8;
@@ -285,12 +335,16 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox textBoxArea;
         private System.Windows.Forms.TextBox textBoxCertificado;
-        private System.Windows.Forms.TextBox textBoxTelefone;
-        private System.Windows.Forms.TextBox textBoxIdade;
         private System.Windows.Forms.TextBox textBoxNome;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBoxCpf;
+        private System.Windows.Forms.MaskedTextBox maskedTextBoxTel;
+        private System.Windows.Forms.MaskedTextBox maskedTextBoxDatNasc;
+        private System.Windows.Forms.MaskedTextBox maskedTextBoxCPF;
+        private System.Windows.Forms.Label labelAlertCpf;
+        private System.Windows.Forms.Button buttonAdicionarFoto3;
+        private System.Windows.Forms.Button buttonAdicionarFoto2;
+        private System.Windows.Forms.Button buttonAdicionarFoto1;
     }
 }

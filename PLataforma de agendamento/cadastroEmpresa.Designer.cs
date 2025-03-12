@@ -29,11 +29,23 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.textBoxComplemento = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.textBoxNomeContato = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.textBoxNomeFantasia = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.textBoxRazaoSocial = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.pictureBoxFotoLogo = new System.Windows.Forms.PictureBox();
             this.richTextBoxSobreEmpresa = new System.Windows.Forms.RichTextBox();
             this.pictureBoxFotoEmpresa3 = new System.Windows.Forms.PictureBox();
             this.pictureBoxFotoEmpresa2 = new System.Windows.Forms.PictureBox();
-            this.pictureBoxFotoEmpresa = new System.Windows.Forms.PictureBox();
+            this.pictureBoxFotoEmpresa1 = new System.Windows.Forms.PictureBox();
             this.buttonStatusServico = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -42,57 +54,55 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.textBoxServicos = new System.Windows.Forms.TextBox();
-            this.textBoxHorarioFuncionamento = new System.Windows.Forms.TextBox();
+            this.textBoxHorario = new System.Windows.Forms.TextBox();
             this.textBoxNumero = new System.Windows.Forms.TextBox();
             this.textBoxRua = new System.Windows.Forms.TextBox();
-            this.textBoxCidade = new System.Windows.Forms.TextBox();
-            this.textBoxEstado = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBoxRazaoSocial = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textBoxNomeFantasia = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.textBoxTelefone = new System.Windows.Forms.TextBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.textBoxNomeContato = new System.Windows.Forms.TextBox();
-            this.label13 = new System.Windows.Forms.Label();
-            this.textBoxCep = new System.Windows.Forms.TextBox();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.textBoxComplemento = new System.Windows.Forms.TextBox();
-            this.label16 = new System.Windows.Forms.Label();
-            this.textBoxCnpj = new System.Windows.Forms.TextBox();
+            this.comboBoxEstado = new System.Windows.Forms.ComboBox();
+            this.maskedTextBoxCnpj = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBoxTelefone = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBoxCep = new System.Windows.Forms.MaskedTextBox();
+            this.textBoxCidade = new System.Windows.Forms.TextBox();
+            this.buttonFotoEmpresa1 = new System.Windows.Forms.Button();
+            this.buttonFotoEmpresa2 = new System.Windows.Forms.Button();
+            this.buttonFotoEmpresa3 = new System.Windows.Forms.Button();
+            this.buttonFotoEmpresa4 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFotoLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFotoEmpresa3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFotoEmpresa2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFotoEmpresa)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFotoEmpresa1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.buttonFotoEmpresa4);
+            this.groupBox1.Controls.Add(this.buttonFotoEmpresa3);
+            this.groupBox1.Controls.Add(this.buttonFotoEmpresa2);
+            this.groupBox1.Controls.Add(this.buttonFotoEmpresa1);
+            this.groupBox1.Controls.Add(this.textBoxCidade);
+            this.groupBox1.Controls.Add(this.maskedTextBoxCep);
+            this.groupBox1.Controls.Add(this.maskedTextBoxTelefone);
+            this.groupBox1.Controls.Add(this.maskedTextBoxCnpj);
+            this.groupBox1.Controls.Add(this.comboBoxEstado);
             this.groupBox1.Controls.Add(this.label16);
-            this.groupBox1.Controls.Add(this.textBoxCnpj);
             this.groupBox1.Controls.Add(this.label15);
             this.groupBox1.Controls.Add(this.textBoxComplemento);
-            this.groupBox1.Controls.Add(this.textBoxCep);
             this.groupBox1.Controls.Add(this.label14);
             this.groupBox1.Controls.Add(this.label13);
             this.groupBox1.Controls.Add(this.label12);
             this.groupBox1.Controls.Add(this.textBoxNomeContato);
             this.groupBox1.Controls.Add(this.label11);
-            this.groupBox1.Controls.Add(this.textBoxTelefone);
             this.groupBox1.Controls.Add(this.textBoxNomeFantasia);
             this.groupBox1.Controls.Add(this.label9);
             this.groupBox1.Controls.Add(this.textBoxRazaoSocial);
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.pictureBoxLogo);
+            this.groupBox1.Controls.Add(this.pictureBoxFotoLogo);
             this.groupBox1.Controls.Add(this.richTextBoxSobreEmpresa);
             this.groupBox1.Controls.Add(this.pictureBoxFotoEmpresa3);
             this.groupBox1.Controls.Add(this.pictureBoxFotoEmpresa2);
-            this.groupBox1.Controls.Add(this.pictureBoxFotoEmpresa);
+            this.groupBox1.Controls.Add(this.pictureBoxFotoEmpresa1);
             this.groupBox1.Controls.Add(this.buttonStatusServico);
             this.groupBox1.Controls.Add(this.label10);
             this.groupBox1.Controls.Add(this.label8);
@@ -101,11 +111,9 @@
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.textBoxServicos);
-            this.groupBox1.Controls.Add(this.textBoxHorarioFuncionamento);
+            this.groupBox1.Controls.Add(this.textBoxHorario);
             this.groupBox1.Controls.Add(this.textBoxNumero);
             this.groupBox1.Controls.Add(this.textBoxRua);
-            this.groupBox1.Controls.Add(this.textBoxCidade);
-            this.groupBox1.Controls.Add(this.textBoxEstado);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -115,15 +123,124 @@
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             // 
-            // pictureBoxLogo
+            // label16
             // 
-            this.pictureBoxLogo.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.pictureBoxLogo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBoxLogo.Location = new System.Drawing.Point(921, 403);
-            this.pictureBoxLogo.Name = "pictureBoxLogo";
-            this.pictureBoxLogo.Size = new System.Drawing.Size(142, 84);
-            this.pictureBoxLogo.TabIndex = 24;
-            this.pictureBoxLogo.TabStop = false;
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(6, 180);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(45, 16);
+            this.label16.TabIndex = 39;
+            this.label16.Text = "CNPJ:";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(521, 351);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(94, 16);
+            this.label15.TabIndex = 37;
+            this.label15.Text = "Complemento:";
+            // 
+            // textBoxComplemento
+            // 
+            this.textBoxComplemento.Location = new System.Drawing.Point(524, 370);
+            this.textBoxComplemento.Name = "textBoxComplemento";
+            this.textBoxComplemento.Size = new System.Drawing.Size(332, 22);
+            this.textBoxComplemento.TabIndex = 36;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(525, 102);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(37, 16);
+            this.label14.TabIndex = 34;
+            this.label14.Text = "CEP:";
+            this.label14.Click += new System.EventHandler(this.label14_Click);
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(524, 68);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(84, 19);
+            this.label13.TabIndex = 33;
+            this.label13.Text = "Endereço:";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(241, 261);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(96, 16);
+            this.label12.TabIndex = 32;
+            this.label12.Text = "Nome Contato:";
+            // 
+            // textBoxNomeContato
+            // 
+            this.textBoxNomeContato.Location = new System.Drawing.Point(245, 280);
+            this.textBoxNomeContato.Name = "textBoxNomeContato";
+            this.textBoxNomeContato.Size = new System.Drawing.Size(160, 22);
+            this.textBoxNomeContato.TabIndex = 31;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(241, 205);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(64, 16);
+            this.label11.TabIndex = 30;
+            this.label11.Text = "Telefone:";
+            // 
+            // textBoxNomeFantasia
+            // 
+            this.textBoxNomeFantasia.Location = new System.Drawing.Point(6, 152);
+            this.textBoxNomeFantasia.Name = "textBoxNomeFantasia";
+            this.textBoxNomeFantasia.Size = new System.Drawing.Size(400, 22);
+            this.textBoxNomeFantasia.TabIndex = 28;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(6, 136);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(97, 16);
+            this.label9.TabIndex = 27;
+            this.label9.Text = "Nome fantasia:";
+            // 
+            // textBoxRazaoSocial
+            // 
+            this.textBoxRazaoSocial.Location = new System.Drawing.Point(6, 96);
+            this.textBoxRazaoSocial.Name = "textBoxRazaoSocial";
+            this.textBoxRazaoSocial.Size = new System.Drawing.Size(400, 22);
+            this.textBoxRazaoSocial.TabIndex = 26;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(6, 80);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(89, 16);
+            this.label3.TabIndex = 25;
+            this.label3.Text = "Razão social:";
+            // 
+            // pictureBoxFotoLogo
+            // 
+            this.pictureBoxFotoLogo.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.pictureBoxFotoLogo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBoxFotoLogo.Location = new System.Drawing.Point(921, 403);
+            this.pictureBoxFotoLogo.Name = "pictureBoxFotoLogo";
+            this.pictureBoxFotoLogo.Size = new System.Drawing.Size(142, 84);
+            this.pictureBoxFotoLogo.TabIndex = 24;
+            this.pictureBoxFotoLogo.TabStop = false;
             // 
             // richTextBoxSobreEmpresa
             // 
@@ -153,15 +270,15 @@
             this.pictureBoxFotoEmpresa2.TabIndex = 21;
             this.pictureBoxFotoEmpresa2.TabStop = false;
             // 
-            // pictureBoxFotoEmpresa
+            // pictureBoxFotoEmpresa1
             // 
-            this.pictureBoxFotoEmpresa.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.pictureBoxFotoEmpresa.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBoxFotoEmpresa.Location = new System.Drawing.Point(921, 68);
-            this.pictureBoxFotoEmpresa.Name = "pictureBoxFotoEmpresa";
-            this.pictureBoxFotoEmpresa.Size = new System.Drawing.Size(142, 84);
-            this.pictureBoxFotoEmpresa.TabIndex = 20;
-            this.pictureBoxFotoEmpresa.TabStop = false;
+            this.pictureBoxFotoEmpresa1.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.pictureBoxFotoEmpresa1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBoxFotoEmpresa1.Location = new System.Drawing.Point(921, 68);
+            this.pictureBoxFotoEmpresa1.Name = "pictureBoxFotoEmpresa1";
+            this.pictureBoxFotoEmpresa1.Size = new System.Drawing.Size(142, 84);
+            this.pictureBoxFotoEmpresa1.TabIndex = 20;
+            this.pictureBoxFotoEmpresa1.TabStop = false;
             // 
             // buttonStatusServico
             // 
@@ -172,6 +289,7 @@
             this.buttonStatusServico.TabIndex = 19;
             this.buttonStatusServico.Text = "Confirmar";
             this.buttonStatusServico.UseVisualStyleBackColor = false;
+            this.buttonStatusServico.Click += new System.EventHandler(this.buttonStatusServico_Click);
             // 
             // label10
             // 
@@ -240,12 +358,12 @@
             this.textBoxServicos.Size = new System.Drawing.Size(161, 22);
             this.textBoxServicos.TabIndex = 7;
             // 
-            // textBoxHorarioFuncionamento
+            // textBoxHorario
             // 
-            this.textBoxHorarioFuncionamento.Location = new System.Drawing.Point(8, 301);
-            this.textBoxHorarioFuncionamento.Name = "textBoxHorarioFuncionamento";
-            this.textBoxHorarioFuncionamento.Size = new System.Drawing.Size(161, 22);
-            this.textBoxHorarioFuncionamento.TabIndex = 6;
+            this.textBoxHorario.Location = new System.Drawing.Point(8, 301);
+            this.textBoxHorario.Name = "textBoxHorario";
+            this.textBoxHorario.Size = new System.Drawing.Size(161, 22);
+            this.textBoxHorario.TabIndex = 6;
             // 
             // textBoxNumero
             // 
@@ -260,20 +378,6 @@
             this.textBoxRua.Name = "textBoxRua";
             this.textBoxRua.Size = new System.Drawing.Size(139, 22);
             this.textBoxRua.TabIndex = 4;
-            // 
-            // textBoxCidade
-            // 
-            this.textBoxCidade.Location = new System.Drawing.Point(524, 223);
-            this.textBoxCidade.Name = "textBoxCidade";
-            this.textBoxCidade.Size = new System.Drawing.Size(139, 22);
-            this.textBoxCidade.TabIndex = 3;
-            // 
-            // textBoxEstado
-            // 
-            this.textBoxEstado.Location = new System.Drawing.Point(524, 174);
-            this.textBoxEstado.Name = "textBoxEstado";
-            this.textBoxEstado.Size = new System.Drawing.Size(139, 22);
-            this.textBoxEstado.TabIndex = 2;
             // 
             // label2
             // 
@@ -296,135 +400,138 @@
             this.label1.Text = "Cadastro da Empresa";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // textBoxRazaoSocial
+            // comboBoxEstado
             // 
-            this.textBoxRazaoSocial.Location = new System.Drawing.Point(6, 96);
-            this.textBoxRazaoSocial.Name = "textBoxRazaoSocial";
-            this.textBoxRazaoSocial.Size = new System.Drawing.Size(400, 22);
-            this.textBoxRazaoSocial.TabIndex = 26;
+            this.comboBoxEstado.FormattingEnabled = true;
+            this.comboBoxEstado.Items.AddRange(new object[] {
+            "AC",
+            "",
+            "AL",
+            "",
+            "AM",
+            "",
+            "AP",
+            "",
+            "BA",
+            "",
+            "CE",
+            "",
+            "DF",
+            "",
+            "ES",
+            "",
+            "GO",
+            "",
+            "MA",
+            "",
+            "MG",
+            "",
+            "MS",
+            "",
+            "MT",
+            "",
+            "PA",
+            "",
+            "PB",
+            "",
+            "PE",
+            "",
+            "PI",
+            "",
+            "PR",
+            "",
+            "RJ",
+            "",
+            "RN",
+            "",
+            "RO",
+            "",
+            "RR",
+            "",
+            "RS",
+            "",
+            "SC",
+            "",
+            "SE",
+            "",
+            "SP",
+            "",
+            "TO"});
+            this.comboBoxEstado.Location = new System.Drawing.Point(527, 172);
+            this.comboBoxEstado.Name = "comboBoxEstado";
+            this.comboBoxEstado.Size = new System.Drawing.Size(121, 24);
+            this.comboBoxEstado.TabIndex = 41;
             // 
-            // label3
+            // maskedTextBoxCnpj
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(6, 80);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(89, 16);
-            this.label3.TabIndex = 25;
-            this.label3.Text = "Razão social:";
+            this.maskedTextBoxCnpj.Location = new System.Drawing.Point(9, 199);
+            this.maskedTextBoxCnpj.Mask = "00.000.000/0001-00";
+            this.maskedTextBoxCnpj.Name = "maskedTextBoxCnpj";
+            this.maskedTextBoxCnpj.Size = new System.Drawing.Size(160, 22);
+            this.maskedTextBoxCnpj.TabIndex = 42;
             // 
-            // textBoxNomeFantasia
+            // maskedTextBoxTelefone
             // 
-            this.textBoxNomeFantasia.Location = new System.Drawing.Point(6, 152);
-            this.textBoxNomeFantasia.Name = "textBoxNomeFantasia";
-            this.textBoxNomeFantasia.Size = new System.Drawing.Size(400, 22);
-            this.textBoxNomeFantasia.TabIndex = 28;
+            this.maskedTextBoxTelefone.Location = new System.Drawing.Point(244, 221);
+            this.maskedTextBoxTelefone.Mask = "(00)00000-0000";
+            this.maskedTextBoxTelefone.Name = "maskedTextBoxTelefone";
+            this.maskedTextBoxTelefone.Size = new System.Drawing.Size(160, 22);
+            this.maskedTextBoxTelefone.TabIndex = 43;
             // 
-            // label9
+            // maskedTextBoxCep
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(6, 136);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(97, 16);
-            this.label9.TabIndex = 27;
-            this.label9.Text = "Nome fantasia:";
+            this.maskedTextBoxCep.Location = new System.Drawing.Point(527, 121);
+            this.maskedTextBoxCep.Mask = "00.000-000";
+            this.maskedTextBoxCep.Name = "maskedTextBoxCep";
+            this.maskedTextBoxCep.Size = new System.Drawing.Size(160, 22);
+            this.maskedTextBoxCep.TabIndex = 44;
             // 
-            // label11
+            // textBoxCidade
             // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(241, 205);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(64, 16);
-            this.label11.TabIndex = 30;
-            this.label11.Text = "Telefone:";
+            this.textBoxCidade.Location = new System.Drawing.Point(528, 223);
+            this.textBoxCidade.Name = "textBoxCidade";
+            this.textBoxCidade.Size = new System.Drawing.Size(139, 22);
+            this.textBoxCidade.TabIndex = 45;
             // 
-            // textBoxTelefone
+            // buttonFotoEmpresa1
             // 
-            this.textBoxTelefone.Location = new System.Drawing.Point(244, 224);
-            this.textBoxTelefone.Name = "textBoxTelefone";
-            this.textBoxTelefone.Size = new System.Drawing.Size(161, 22);
-            this.textBoxTelefone.TabIndex = 29;
+            this.buttonFotoEmpresa1.Location = new System.Drawing.Point(957, 133);
+            this.buttonFotoEmpresa1.Name = "buttonFotoEmpresa1";
+            this.buttonFotoEmpresa1.Size = new System.Drawing.Size(85, 41);
+            this.buttonFotoEmpresa1.TabIndex = 46;
+            this.buttonFotoEmpresa1.Text = "Adicionar Foto";
+            this.buttonFotoEmpresa1.UseVisualStyleBackColor = true;
+            this.buttonFotoEmpresa1.Click += new System.EventHandler(this.buttonFotoEmpresa1_Click);
             // 
-            // label12
+            // buttonFotoEmpresa2
             // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(241, 261);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(96, 16);
-            this.label12.TabIndex = 32;
-            this.label12.Text = "Nome Contato:";
+            this.buttonFotoEmpresa2.Location = new System.Drawing.Point(957, 242);
+            this.buttonFotoEmpresa2.Name = "buttonFotoEmpresa2";
+            this.buttonFotoEmpresa2.Size = new System.Drawing.Size(85, 41);
+            this.buttonFotoEmpresa2.TabIndex = 47;
+            this.buttonFotoEmpresa2.Text = "Adicionar Foto";
+            this.buttonFotoEmpresa2.UseVisualStyleBackColor = true;
+            this.buttonFotoEmpresa2.Click += new System.EventHandler(this.buttonFotoEmpresa2_Click);
             // 
-            // textBoxNomeContato
+            // buttonFotoEmpresa3
             // 
-            this.textBoxNomeContato.Location = new System.Drawing.Point(245, 280);
-            this.textBoxNomeContato.Name = "textBoxNomeContato";
-            this.textBoxNomeContato.Size = new System.Drawing.Size(160, 22);
-            this.textBoxNomeContato.TabIndex = 31;
+            this.buttonFotoEmpresa3.Location = new System.Drawing.Point(957, 351);
+            this.buttonFotoEmpresa3.Name = "buttonFotoEmpresa3";
+            this.buttonFotoEmpresa3.Size = new System.Drawing.Size(85, 41);
+            this.buttonFotoEmpresa3.TabIndex = 48;
+            this.buttonFotoEmpresa3.Text = "Adicionar Foto";
+            this.buttonFotoEmpresa3.UseVisualStyleBackColor = true;
+            this.buttonFotoEmpresa3.Click += new System.EventHandler(this.buttonFotoEmpresa3_Click);
             // 
-            // label13
+            // buttonFotoEmpresa4
             // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(524, 68);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(84, 19);
-            this.label13.TabIndex = 33;
-            this.label13.Text = "Endereço:";
-            // 
-            // textBoxCep
-            // 
-            this.textBoxCep.Location = new System.Drawing.Point(524, 121);
-            this.textBoxCep.Name = "textBoxCep";
-            this.textBoxCep.Size = new System.Drawing.Size(139, 22);
-            this.textBoxCep.TabIndex = 35;
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(525, 102);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(37, 16);
-            this.label14.TabIndex = 34;
-            this.label14.Text = "CEP:";
-            this.label14.Click += new System.EventHandler(this.label14_Click);
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(521, 351);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(94, 16);
-            this.label15.TabIndex = 37;
-            this.label15.Text = "Complemento:";
-            // 
-            // textBoxComplemento
-            // 
-            this.textBoxComplemento.Location = new System.Drawing.Point(524, 370);
-            this.textBoxComplemento.Name = "textBoxComplemento";
-            this.textBoxComplemento.Size = new System.Drawing.Size(332, 22);
-            this.textBoxComplemento.TabIndex = 36;
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(6, 180);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(45, 16);
-            this.label16.TabIndex = 39;
-            this.label16.Text = "CNPJ:";
-            // 
-            // textBoxCnpj
-            // 
-            this.textBoxCnpj.Location = new System.Drawing.Point(9, 199);
-            this.textBoxCnpj.Name = "textBoxCnpj";
-            this.textBoxCnpj.Size = new System.Drawing.Size(161, 22);
-            this.textBoxCnpj.TabIndex = 38;
+            this.buttonFotoEmpresa4.Location = new System.Drawing.Point(957, 466);
+            this.buttonFotoEmpresa4.Name = "buttonFotoEmpresa4";
+            this.buttonFotoEmpresa4.Size = new System.Drawing.Size(85, 41);
+            this.buttonFotoEmpresa4.TabIndex = 49;
+            this.buttonFotoEmpresa4.Text = "Adicionar Foto";
+            this.buttonFotoEmpresa4.UseVisualStyleBackColor = true;
+            this.buttonFotoEmpresa4.Click += new System.EventHandler(this.buttonFotoEmpresa4_Click);
             // 
             // cadastroEmpresa
             // 
@@ -436,10 +543,10 @@
             this.Text = "cadastroEmpresa";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFotoLogo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFotoEmpresa3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFotoEmpresa2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFotoEmpresa)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFotoEmpresa1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -450,7 +557,7 @@
         private System.Windows.Forms.RichTextBox richTextBoxSobreEmpresa;
         private System.Windows.Forms.PictureBox pictureBoxFotoEmpresa3;
         private System.Windows.Forms.PictureBox pictureBoxFotoEmpresa2;
-        private System.Windows.Forms.PictureBox pictureBoxFotoEmpresa;
+        private System.Windows.Forms.PictureBox pictureBoxFotoEmpresa1;
         private System.Windows.Forms.Button buttonStatusServico;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label8;
@@ -459,28 +566,32 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox textBoxServicos;
-        private System.Windows.Forms.TextBox textBoxHorarioFuncionamento;
+        private System.Windows.Forms.TextBox textBoxHorario;
         private System.Windows.Forms.TextBox textBoxNumero;
         private System.Windows.Forms.TextBox textBoxRua;
-        private System.Windows.Forms.TextBox textBoxCidade;
-        private System.Windows.Forms.TextBox textBoxEstado;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox pictureBoxLogo;
+        private System.Windows.Forms.PictureBox pictureBoxFotoLogo;
         private System.Windows.Forms.TextBox textBoxRazaoSocial;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox textBoxTelefone;
         private System.Windows.Forms.TextBox textBoxNomeFantasia;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBoxCep;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.TextBox textBoxNomeContato;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.TextBox textBoxCnpj;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.TextBox textBoxComplemento;
+        private System.Windows.Forms.MaskedTextBox maskedTextBoxTelefone;
+        private System.Windows.Forms.MaskedTextBox maskedTextBoxCnpj;
+        private System.Windows.Forms.ComboBox comboBoxEstado;
+        private System.Windows.Forms.MaskedTextBox maskedTextBoxCep;
+        private System.Windows.Forms.TextBox textBoxCidade;
+        private System.Windows.Forms.Button buttonFotoEmpresa4;
+        private System.Windows.Forms.Button buttonFotoEmpresa3;
+        private System.Windows.Forms.Button buttonFotoEmpresa2;
+        private System.Windows.Forms.Button buttonFotoEmpresa1;
     }
 }

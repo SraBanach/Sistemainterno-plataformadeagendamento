@@ -32,7 +32,7 @@
             this.richTextBoxDescricao = new System.Windows.Forms.RichTextBox();
             this.pictureBoxFotoServico3 = new System.Windows.Forms.PictureBox();
             this.pictureBoxFotoServico2 = new System.Windows.Forms.PictureBox();
-            this.pictureBoxFotoServico = new System.Windows.Forms.PictureBox();
+            this.pictureBoxFotoServico1 = new System.Windows.Forms.PictureBox();
             this.buttonStatusServico = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -44,24 +44,33 @@
             this.textBoxSms = new System.Windows.Forms.TextBox();
             this.textBoxProfissional = new System.Windows.Forms.TextBox();
             this.textBoxPrevRetorno = new System.Windows.Forms.TextBox();
-            this.textBoxValor = new System.Windows.Forms.TextBox();
-            this.textBoxCategoria = new System.Windows.Forms.TextBox();
-            this.textBoxTempo = new System.Windows.Forms.TextBox();
-            this.textBoxServiço = new System.Windows.Forms.TextBox();
+            this.textBoxServico = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.maskedTextBoxValor = new System.Windows.Forms.MaskedTextBox();
+            this.comboBoxTempo = new System.Windows.Forms.ComboBox();
+            this.comboBoxCategoria = new System.Windows.Forms.ComboBox();
+            this.ButtonFotoServico1 = new System.Windows.Forms.Button();
+            this.buttonFotoServico2 = new System.Windows.Forms.Button();
+            this.buttonFotoServico3 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFotoServico3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFotoServico2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFotoServico)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFotoServico1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.buttonFotoServico3);
+            this.groupBox1.Controls.Add(this.buttonFotoServico2);
+            this.groupBox1.Controls.Add(this.ButtonFotoServico1);
+            this.groupBox1.Controls.Add(this.comboBoxCategoria);
+            this.groupBox1.Controls.Add(this.comboBoxTempo);
+            this.groupBox1.Controls.Add(this.maskedTextBoxValor);
             this.groupBox1.Controls.Add(this.richTextBoxDescricao);
             this.groupBox1.Controls.Add(this.pictureBoxFotoServico3);
             this.groupBox1.Controls.Add(this.pictureBoxFotoServico2);
-            this.groupBox1.Controls.Add(this.pictureBoxFotoServico);
+            this.groupBox1.Controls.Add(this.pictureBoxFotoServico1);
             this.groupBox1.Controls.Add(this.buttonStatusServico);
             this.groupBox1.Controls.Add(this.label10);
             this.groupBox1.Controls.Add(this.label8);
@@ -73,10 +82,7 @@
             this.groupBox1.Controls.Add(this.textBoxSms);
             this.groupBox1.Controls.Add(this.textBoxProfissional);
             this.groupBox1.Controls.Add(this.textBoxPrevRetorno);
-            this.groupBox1.Controls.Add(this.textBoxValor);
-            this.groupBox1.Controls.Add(this.textBoxCategoria);
-            this.groupBox1.Controls.Add(this.textBoxTempo);
-            this.groupBox1.Controls.Add(this.textBoxServiço);
+            this.groupBox1.Controls.Add(this.textBoxServico);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -114,15 +120,15 @@
             this.pictureBoxFotoServico2.TabIndex = 21;
             this.pictureBoxFotoServico2.TabStop = false;
             // 
-            // pictureBoxFotoServico
+            // pictureBoxFotoServico1
             // 
-            this.pictureBoxFotoServico.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.pictureBoxFotoServico.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBoxFotoServico.Location = new System.Drawing.Point(552, 50);
-            this.pictureBoxFotoServico.Name = "pictureBoxFotoServico";
-            this.pictureBoxFotoServico.Size = new System.Drawing.Size(142, 84);
-            this.pictureBoxFotoServico.TabIndex = 20;
-            this.pictureBoxFotoServico.TabStop = false;
+            this.pictureBoxFotoServico1.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.pictureBoxFotoServico1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBoxFotoServico1.Location = new System.Drawing.Point(552, 50);
+            this.pictureBoxFotoServico1.Name = "pictureBoxFotoServico1";
+            this.pictureBoxFotoServico1.Size = new System.Drawing.Size(142, 84);
+            this.pictureBoxFotoServico1.TabIndex = 20;
+            this.pictureBoxFotoServico1.TabStop = false;
             // 
             // buttonStatusServico
             // 
@@ -133,6 +139,7 @@
             this.buttonStatusServico.TabIndex = 19;
             this.buttonStatusServico.Text = "Status de serviço";
             this.buttonStatusServico.UseVisualStyleBackColor = false;
+            this.buttonStatusServico.Click += new System.EventHandler(this.buttonStatusServico_Click);
             // 
             // label10
             // 
@@ -226,33 +233,12 @@
             this.textBoxPrevRetorno.Size = new System.Drawing.Size(139, 22);
             this.textBoxPrevRetorno.TabIndex = 6;
             // 
-            // textBoxValor
+            // textBoxServico
             // 
-            this.textBoxValor.Location = new System.Drawing.Point(6, 282);
-            this.textBoxValor.Name = "textBoxValor";
-            this.textBoxValor.Size = new System.Drawing.Size(139, 22);
-            this.textBoxValor.TabIndex = 5;
-            // 
-            // textBoxCategoria
-            // 
-            this.textBoxCategoria.Location = new System.Drawing.Point(6, 213);
-            this.textBoxCategoria.Name = "textBoxCategoria";
-            this.textBoxCategoria.Size = new System.Drawing.Size(139, 22);
-            this.textBoxCategoria.TabIndex = 4;
-            // 
-            // textBoxTempo
-            // 
-            this.textBoxTempo.Location = new System.Drawing.Point(6, 148);
-            this.textBoxTempo.Name = "textBoxTempo";
-            this.textBoxTempo.Size = new System.Drawing.Size(139, 22);
-            this.textBoxTempo.TabIndex = 3;
-            // 
-            // textBoxServiço
-            // 
-            this.textBoxServiço.Location = new System.Drawing.Point(6, 85);
-            this.textBoxServiço.Name = "textBoxServiço";
-            this.textBoxServiço.Size = new System.Drawing.Size(139, 22);
-            this.textBoxServiço.TabIndex = 2;
+            this.textBoxServico.Location = new System.Drawing.Point(6, 85);
+            this.textBoxServico.Name = "textBoxServico";
+            this.textBoxServico.Size = new System.Drawing.Size(139, 22);
+            this.textBoxServico.TabIndex = 2;
             // 
             // label2
             // 
@@ -274,6 +260,85 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Cadastro de serviço";
             // 
+            // maskedTextBoxValor
+            // 
+            this.maskedTextBoxValor.Location = new System.Drawing.Point(9, 285);
+            this.maskedTextBoxValor.Mask = "$000,00";
+            this.maskedTextBoxValor.Name = "maskedTextBoxValor";
+            this.maskedTextBoxValor.Size = new System.Drawing.Size(136, 22);
+            this.maskedTextBoxValor.TabIndex = 24;
+            // 
+            // comboBoxTempo
+            // 
+            this.comboBoxTempo.FormattingEnabled = true;
+            this.comboBoxTempo.Items.AddRange(new object[] {
+            "15 min ",
+            "30 min ",
+            "45 min ",
+            "1 hr ",
+            "01:30",
+            "02:00 ",
+            "02:30 ",
+            "03:00 ",
+            "03:30 ",
+            "04:00 ",
+            "04:30 ",
+            "05:00"});
+            this.comboBoxTempo.Location = new System.Drawing.Point(6, 148);
+            this.comboBoxTempo.Name = "comboBoxTempo";
+            this.comboBoxTempo.Size = new System.Drawing.Size(139, 24);
+            this.comboBoxTempo.TabIndex = 25;
+            // 
+            // comboBoxCategoria
+            // 
+            this.comboBoxCategoria.FormattingEnabled = true;
+            this.comboBoxCategoria.Items.AddRange(new object[] {
+            "Manicure ",
+            "Pedicure ",
+            "Depilação ",
+            "Barbearia",
+            "Cabelo ",
+            "Maquiagem ",
+            "Sobrancelhas ",
+            "Spa ",
+            "Massagem ",
+            "Bronzeamento"});
+            this.comboBoxCategoria.Location = new System.Drawing.Point(9, 216);
+            this.comboBoxCategoria.Name = "comboBoxCategoria";
+            this.comboBoxCategoria.Size = new System.Drawing.Size(139, 24);
+            this.comboBoxCategoria.TabIndex = 26;
+            this.comboBoxCategoria.SelectedIndexChanged += new System.EventHandler(this.comboBoxCategoria_SelectedIndexChanged);
+            // 
+            // ButtonFotoServico1
+            // 
+            this.ButtonFotoServico1.Location = new System.Drawing.Point(576, 118);
+            this.ButtonFotoServico1.Name = "ButtonFotoServico1";
+            this.ButtonFotoServico1.Size = new System.Drawing.Size(91, 45);
+            this.ButtonFotoServico1.TabIndex = 27;
+            this.ButtonFotoServico1.Text = "Adicionar Foto";
+            this.ButtonFotoServico1.UseVisualStyleBackColor = true;
+            this.ButtonFotoServico1.Click += new System.EventHandler(this.ButtonFotoServico1_Click);
+            // 
+            // buttonFotoServico2
+            // 
+            this.buttonFotoServico2.Location = new System.Drawing.Point(576, 252);
+            this.buttonFotoServico2.Name = "buttonFotoServico2";
+            this.buttonFotoServico2.Size = new System.Drawing.Size(91, 45);
+            this.buttonFotoServico2.TabIndex = 28;
+            this.buttonFotoServico2.Text = "Adicionar Foto";
+            this.buttonFotoServico2.UseVisualStyleBackColor = true;
+            this.buttonFotoServico2.Click += new System.EventHandler(this.buttonFotoServico2_Click);
+            // 
+            // buttonFotoServico3
+            // 
+            this.buttonFotoServico3.Location = new System.Drawing.Point(576, 386);
+            this.buttonFotoServico3.Name = "buttonFotoServico3";
+            this.buttonFotoServico3.Size = new System.Drawing.Size(91, 45);
+            this.buttonFotoServico3.TabIndex = 29;
+            this.buttonFotoServico3.Text = "Adicionar Foto";
+            this.buttonFotoServico3.UseVisualStyleBackColor = true;
+            this.buttonFotoServico3.Click += new System.EventHandler(this.buttonFotoServico3_Click);
+            // 
             // cadastro_de_serviço
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -286,7 +351,7 @@
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFotoServico3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFotoServico2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFotoServico)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFotoServico1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -305,15 +370,18 @@
         private System.Windows.Forms.TextBox textBoxSms;
         private System.Windows.Forms.TextBox textBoxProfissional;
         private System.Windows.Forms.TextBox textBoxPrevRetorno;
-        private System.Windows.Forms.TextBox textBoxValor;
-        private System.Windows.Forms.TextBox textBoxCategoria;
-        private System.Windows.Forms.TextBox textBoxTempo;
-        private System.Windows.Forms.TextBox textBoxServiço;
+        private System.Windows.Forms.TextBox textBoxServico;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBoxFotoServico3;
         private System.Windows.Forms.PictureBox pictureBoxFotoServico2;
-        private System.Windows.Forms.PictureBox pictureBoxFotoServico;
+        private System.Windows.Forms.PictureBox pictureBoxFotoServico1;
         private System.Windows.Forms.Button buttonStatusServico;
         private System.Windows.Forms.RichTextBox richTextBoxDescricao;
+        private System.Windows.Forms.ComboBox comboBoxCategoria;
+        private System.Windows.Forms.ComboBox comboBoxTempo;
+        private System.Windows.Forms.MaskedTextBox maskedTextBoxValor;
+        private System.Windows.Forms.Button buttonFotoServico3;
+        private System.Windows.Forms.Button buttonFotoServico2;
+        private System.Windows.Forms.Button ButtonFotoServico1;
     }
 }
