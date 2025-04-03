@@ -51,8 +51,7 @@ namespace PLataforma_de_agendamento
                         comando.Parameters.AddWithValue("@razaoSocial", textBoxRazaoSocial.Text);
                         comando.Parameters.AddWithValue("@nomeFantasia", textBoxNomeFantasia.Text);
                         comando.Parameters.AddWithValue("@cnpj", maskedTextBoxCnpj.Text);
-                        comando.Parameters.AddWithValue("@servicos", textBoxServicos.Text);
-                        comando.Parameters.AddWithValue("@horario", textBoxHorario.Text);
+                        comando.Parameters.AddWithValue("@servicos", checkedListBox1.Text);
                         comando.Parameters.AddWithValue("@telefone", maskedTextBoxTelefone.Text);
                         comando.Parameters.AddWithValue("@nomeContato", textBoxNomeContato.Text);
                         comando.Parameters.AddWithValue("@cep", maskedTextBoxCep.Text);
@@ -61,7 +60,6 @@ namespace PLataforma_de_agendamento
                         comando.Parameters.AddWithValue("@rua", textBoxRua.Text);
                         comando.Parameters.AddWithValue("@numero", textBoxNumero.Text);
                         comando.Parameters.AddWithValue("@complemento", textBoxComplemento.Text);
-                        comando.Parameters.AddWithValue("@sobreEmpresa", richTextBoxSobreEmpresa.Text);
 
                         comando.Parameters.AddWithValue("@fotoEmpresa1", pictureBoxFotoEmpresa1.Text);
                         comando.Parameters.AddWithValue("@fotoEmpresa2", pictureBoxFotoEmpresa2.Text);
@@ -77,8 +75,7 @@ namespace PLataforma_de_agendamento
                         textBoxRazaoSocial.Text = "";
                         textBoxNomeFantasia.Text = "";
                         maskedTextBoxCnpj.Text = "";
-                        textBoxServicos.Text = "";
-                        textBoxHorario.Text = "";
+                        checkedListBox1.Text = "";
                         maskedTextBoxTelefone.Text = "";
                         textBoxNomeContato.Text = "";
                         maskedTextBoxCep.Text = "";
@@ -87,7 +84,6 @@ namespace PLataforma_de_agendamento
                         textBoxRua.Text = "";
                         textBoxNumero.Text = "";
                         textBoxComplemento.Text = "";
-                        richTextBoxSobreEmpresa.Text = "";
 
                         pictureBoxFotoEmpresa1.Text = "";
                         pictureBoxFotoEmpresa2.Text = "";
@@ -139,6 +135,11 @@ namespace PLataforma_de_agendamento
             if (openFileDialog4.ShowDialog() == DialogResult.OK)
                 pictureBoxFotoLogo.Image = Image.FromFile(openFileDialog4.FileName);
             pictureBoxFotoLogo.SizeMode = PictureBoxSizeMode.StretchImage;
+        }
+
+        private void textBoxHorario_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

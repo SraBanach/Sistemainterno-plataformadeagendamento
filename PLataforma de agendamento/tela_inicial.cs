@@ -45,5 +45,22 @@ namespace PLataforma_de_agendamento
             bancoClientes form = new bancoClientes();
             form.ShowDialog();
         }
+
+        private void dataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void buttonMinhaAgenda_Click(object sender, EventArgs e)
+        {
+            agenda form = new agenda();
+            form.ShowDialog();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            agenda form = new agenda();
+            form.ShowDialog();
+        }
     }
 }

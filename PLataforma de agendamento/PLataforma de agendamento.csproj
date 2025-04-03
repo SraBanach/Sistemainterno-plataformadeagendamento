@@ -98,6 +98,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="agenda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="agenda.Designer.cs">
+      <DependentUpon>agenda.cs</DependentUpon>
+    </Compile>
     <Compile Include="bancoClientes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -136,6 +142,9 @@
     <Compile Include="tela_inicial.Designer.cs">
       <DependentUpon>tela_inicial.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="agenda.resx">
+      <DependentUpon>agenda.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="bancoClientes.resx">
       <DependentUpon>bancoClientes.cs</DependentUpon>
     </EmbeddedResource>

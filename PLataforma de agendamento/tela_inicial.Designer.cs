@@ -28,9 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.dataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewCalendario = new System.Windows.Forms.DataGridView();
             this.buttonBancoClientes = new System.Windows.Forms.Button();
             this.buttonCadastroProfissionais = new System.Windows.Forms.Button();
@@ -39,23 +37,11 @@
             this.buttonCadastroSalao = new System.Windows.Forms.Button();
             this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCalendario)).BeginInit();
             this.SuspendLayout();
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(236, 16);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(287, 26);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Plataforma de agendamento";
-            // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.dataGridView);
             this.groupBox1.Controls.Add(this.dataGridViewCalendario);
             this.groupBox1.Controls.Add(this.buttonBancoClientes);
             this.groupBox1.Controls.Add(this.buttonCadastroProfissionais);
@@ -63,20 +49,11 @@
             this.groupBox1.Controls.Add(this.buttonCadastroServico);
             this.groupBox1.Controls.Add(this.buttonCadastroSalao);
             this.groupBox1.Controls.Add(this.monthCalendar1);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(12, 12);
+            this.groupBox1.Location = new System.Drawing.Point(57, 29);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1134, 712);
+            this.groupBox1.Size = new System.Drawing.Size(1089, 695);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
-            // 
-            // dataGridView
-            // 
-            this.dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView.Location = new System.Drawing.Point(241, 46);
-            this.dataGridView.Name = "dataGridView";
-            this.dataGridView.Size = new System.Drawing.Size(893, 677);
-            this.dataGridView.TabIndex = 8;
             // 
             // dataGridViewCalendario
             // 
@@ -117,6 +94,7 @@
             this.buttonMinhaAgenda.TabIndex = 4;
             this.buttonMinhaAgenda.Text = "Minha agenda";
             this.buttonMinhaAgenda.UseVisualStyleBackColor = false;
+            this.buttonMinhaAgenda.Click += new System.EventHandler(this.buttonMinhaAgenda_Click);
             // 
             // buttonCadastroServico
             // 
@@ -157,16 +135,12 @@
             this.Text = "tela_inicial";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCalendario)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.MonthCalendar monthCalendar1;
         private System.Windows.Forms.Button buttonBancoClientes;
@@ -175,6 +149,5 @@
         private System.Windows.Forms.Button buttonCadastroServico;
         private System.Windows.Forms.Button buttonCadastroSalao;
         private System.Windows.Forms.DataGridView dataGridViewCalendario;
-        private System.Windows.Forms.DataGridView dataGridView;
     }
 }
