@@ -31,7 +31,6 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dataGridViewCalendario = new System.Windows.Forms.DataGridView();
             this.buttonBancoClientes = new System.Windows.Forms.Button();
-            this.buttonCadastroProfissionais = new System.Windows.Forms.Button();
             this.buttonMinhaAgenda = new System.Windows.Forms.Button();
             this.buttonCadastroServico = new System.Windows.Forms.Button();
             this.buttonCadastroSalao = new System.Windows.Forms.Button();
@@ -44,7 +43,6 @@
             // 
             this.groupBox1.Controls.Add(this.dataGridViewCalendario);
             this.groupBox1.Controls.Add(this.buttonBancoClientes);
-            this.groupBox1.Controls.Add(this.buttonCadastroProfissionais);
             this.groupBox1.Controls.Add(this.buttonMinhaAgenda);
             this.groupBox1.Controls.Add(this.buttonCadastroServico);
             this.groupBox1.Controls.Add(this.buttonCadastroSalao);
@@ -66,24 +64,13 @@
             // buttonBancoClientes
             // 
             this.buttonBancoClientes.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.buttonBancoClientes.Location = new System.Drawing.Point(5, 375);
+            this.buttonBancoClientes.Location = new System.Drawing.Point(5, 335);
             this.buttonBancoClientes.Name = "buttonBancoClientes";
             this.buttonBancoClientes.Size = new System.Drawing.Size(138, 33);
             this.buttonBancoClientes.TabIndex = 6;
             this.buttonBancoClientes.Text = "Banco de clientes";
             this.buttonBancoClientes.UseVisualStyleBackColor = false;
             this.buttonBancoClientes.Click += new System.EventHandler(this.buttonBancoClientes_Click);
-            // 
-            // buttonCadastroProfissionais
-            // 
-            this.buttonCadastroProfissionais.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.buttonCadastroProfissionais.Location = new System.Drawing.Point(6, 335);
-            this.buttonCadastroProfissionais.Name = "buttonCadastroProfissionais";
-            this.buttonCadastroProfissionais.Size = new System.Drawing.Size(137, 34);
-            this.buttonCadastroProfissionais.TabIndex = 5;
-            this.buttonCadastroProfissionais.Text = "Cadastro de profissionais";
-            this.buttonCadastroProfissionais.UseVisualStyleBackColor = false;
-            this.buttonCadastroProfissionais.Click += new System.EventHandler(this.buttonCadastroProfissionais_Click);
             // 
             // buttonMinhaAgenda
             // 
@@ -144,7 +131,6 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.MonthCalendar monthCalendar1;
         private System.Windows.Forms.Button buttonBancoClientes;
-        private System.Windows.Forms.Button buttonCadastroProfissionais;
         private System.Windows.Forms.Button buttonMinhaAgenda;
         private System.Windows.Forms.Button buttonCadastroServico;
         private System.Windows.Forms.Button buttonCadastroSalao;

@@ -34,11 +34,6 @@ namespace PLataforma_de_agendamento
             form.ShowDialog();
         }
 
-        private void buttonCadastroProfissionais_Click(object sender, EventArgs e)
-        {
-            CadastroProfissional form = new CadastroProfissional();
-            form.ShowDialog();
-        }
 
         private void buttonBancoClientes_Click(object sender, EventArgs e)
         {

@@ -29,30 +29,22 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.buttonFotoServico3 = new System.Windows.Forms.Button();
+            this.buttonFotoServico2 = new System.Windows.Forms.Button();
+            this.ButtonFotoServico1 = new System.Windows.Forms.Button();
+            this.comboBoxCategoria = new System.Windows.Forms.ComboBox();
+            this.maskedTextBoxValor = new System.Windows.Forms.MaskedTextBox();
             this.richTextBoxDescricao = new System.Windows.Forms.RichTextBox();
             this.pictureBoxFotoServico3 = new System.Windows.Forms.PictureBox();
             this.pictureBoxFotoServico2 = new System.Windows.Forms.PictureBox();
             this.pictureBoxFotoServico1 = new System.Windows.Forms.PictureBox();
             this.buttonStatusServico = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textBoxSms = new System.Windows.Forms.TextBox();
-            this.textBoxProfissional = new System.Windows.Forms.TextBox();
-            this.textBoxPrevRetorno = new System.Windows.Forms.TextBox();
             this.textBoxServico = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.maskedTextBoxValor = new System.Windows.Forms.MaskedTextBox();
-            this.comboBoxTempo = new System.Windows.Forms.ComboBox();
-            this.comboBoxCategoria = new System.Windows.Forms.ComboBox();
-            this.ButtonFotoServico1 = new System.Windows.Forms.Button();
-            this.buttonFotoServico2 = new System.Windows.Forms.Button();
-            this.buttonFotoServico3 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFotoServico3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFotoServico2)).BeginInit();
@@ -65,7 +57,6 @@
             this.groupBox1.Controls.Add(this.buttonFotoServico2);
             this.groupBox1.Controls.Add(this.ButtonFotoServico1);
             this.groupBox1.Controls.Add(this.comboBoxCategoria);
-            this.groupBox1.Controls.Add(this.comboBoxTempo);
             this.groupBox1.Controls.Add(this.maskedTextBoxValor);
             this.groupBox1.Controls.Add(this.richTextBoxDescricao);
             this.groupBox1.Controls.Add(this.pictureBoxFotoServico3);
@@ -73,15 +64,8 @@
             this.groupBox1.Controls.Add(this.pictureBoxFotoServico1);
             this.groupBox1.Controls.Add(this.buttonStatusServico);
             this.groupBox1.Controls.Add(this.label10);
-            this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.textBoxSms);
-            this.groupBox1.Controls.Add(this.textBoxProfissional);
-            this.groupBox1.Controls.Add(this.textBoxPrevRetorno);
             this.groupBox1.Controls.Add(this.textBoxServico);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
@@ -91,6 +75,64 @@
             this.groupBox1.Size = new System.Drawing.Size(776, 437);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
+            // 
+            // buttonFotoServico3
+            // 
+            this.buttonFotoServico3.Location = new System.Drawing.Point(576, 386);
+            this.buttonFotoServico3.Name = "buttonFotoServico3";
+            this.buttonFotoServico3.Size = new System.Drawing.Size(91, 45);
+            this.buttonFotoServico3.TabIndex = 29;
+            this.buttonFotoServico3.Text = "Adicionar Foto";
+            this.buttonFotoServico3.UseVisualStyleBackColor = true;
+            this.buttonFotoServico3.Click += new System.EventHandler(this.buttonFotoServico3_Click);
+            // 
+            // buttonFotoServico2
+            // 
+            this.buttonFotoServico2.Location = new System.Drawing.Point(576, 252);
+            this.buttonFotoServico2.Name = "buttonFotoServico2";
+            this.buttonFotoServico2.Size = new System.Drawing.Size(91, 45);
+            this.buttonFotoServico2.TabIndex = 28;
+            this.buttonFotoServico2.Text = "Adicionar Foto";
+            this.buttonFotoServico2.UseVisualStyleBackColor = true;
+            this.buttonFotoServico2.Click += new System.EventHandler(this.buttonFotoServico2_Click);
+            // 
+            // ButtonFotoServico1
+            // 
+            this.ButtonFotoServico1.Location = new System.Drawing.Point(576, 118);
+            this.ButtonFotoServico1.Name = "ButtonFotoServico1";
+            this.ButtonFotoServico1.Size = new System.Drawing.Size(91, 45);
+            this.ButtonFotoServico1.TabIndex = 27;
+            this.ButtonFotoServico1.Text = "Adicionar Foto";
+            this.ButtonFotoServico1.UseVisualStyleBackColor = true;
+            this.ButtonFotoServico1.Click += new System.EventHandler(this.ButtonFotoServico1_Click);
+            // 
+            // comboBoxCategoria
+            // 
+            this.comboBoxCategoria.FormattingEnabled = true;
+            this.comboBoxCategoria.Items.AddRange(new object[] {
+            "Manicure ",
+            "Pedicure ",
+            "Depilação ",
+            "Barbearia",
+            "Cabelo ",
+            "Maquiagem ",
+            "Sobrancelhas ",
+            "Spa ",
+            "Massagem ",
+            "Bronzeamento"});
+            this.comboBoxCategoria.Location = new System.Drawing.Point(9, 176);
+            this.comboBoxCategoria.Name = "comboBoxCategoria";
+            this.comboBoxCategoria.Size = new System.Drawing.Size(139, 24);
+            this.comboBoxCategoria.TabIndex = 26;
+            this.comboBoxCategoria.SelectedIndexChanged += new System.EventHandler(this.comboBoxCategoria_SelectedIndexChanged);
+            // 
+            // maskedTextBoxValor
+            // 
+            this.maskedTextBoxValor.Location = new System.Drawing.Point(9, 260);
+            this.maskedTextBoxValor.Mask = "$000,00";
+            this.maskedTextBoxValor.Name = "maskedTextBoxValor";
+            this.maskedTextBoxValor.Size = new System.Drawing.Size(136, 22);
+            this.maskedTextBoxValor.TabIndex = 24;
             // 
             // richTextBoxDescricao
             // 
@@ -152,21 +194,11 @@
             this.label10.Text = "Descrição";
             this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(6, 132);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(54, 16);
-            this.label8.TabIndex = 16;
-            this.label8.Text = "Tempo:";
-            // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(6, 197);
+            this.label7.Location = new System.Drawing.Point(6, 157);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(69, 16);
             this.label7.TabIndex = 15;
@@ -176,62 +208,11 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(6, 266);
+            this.label6.Location = new System.Drawing.Point(6, 241);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(42, 16);
             this.label6.TabIndex = 14;
             this.label6.Text = "Valor:";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(291, 69);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(80, 16);
-            this.label5.TabIndex = 13;
-            this.label5.Text = "Profissional:";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(291, 132);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(128, 16);
-            this.label4.TabIndex = 12;
-            this.label4.Text = "Previsão de retorno:";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(291, 197);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(144, 16);
-            this.label3.TabIndex = 11;
-            this.label3.Text = "Enviar sms de retorno?";
-            // 
-            // textBoxSms
-            // 
-            this.textBoxSms.Location = new System.Drawing.Point(294, 213);
-            this.textBoxSms.Name = "textBoxSms";
-            this.textBoxSms.Size = new System.Drawing.Size(139, 22);
-            this.textBoxSms.TabIndex = 8;
-            // 
-            // textBoxProfissional
-            // 
-            this.textBoxProfissional.Location = new System.Drawing.Point(294, 85);
-            this.textBoxProfissional.Name = "textBoxProfissional";
-            this.textBoxProfissional.Size = new System.Drawing.Size(139, 22);
-            this.textBoxProfissional.TabIndex = 7;
-            // 
-            // textBoxPrevRetorno
-            // 
-            this.textBoxPrevRetorno.Location = new System.Drawing.Point(294, 148);
-            this.textBoxPrevRetorno.Name = "textBoxPrevRetorno";
-            this.textBoxPrevRetorno.Size = new System.Drawing.Size(139, 22);
-            this.textBoxPrevRetorno.TabIndex = 6;
             // 
             // textBoxServico
             // 
@@ -260,85 +241,6 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Cadastro de serviço";
             // 
-            // maskedTextBoxValor
-            // 
-            this.maskedTextBoxValor.Location = new System.Drawing.Point(9, 285);
-            this.maskedTextBoxValor.Mask = "$000,00";
-            this.maskedTextBoxValor.Name = "maskedTextBoxValor";
-            this.maskedTextBoxValor.Size = new System.Drawing.Size(136, 22);
-            this.maskedTextBoxValor.TabIndex = 24;
-            // 
-            // comboBoxTempo
-            // 
-            this.comboBoxTempo.FormattingEnabled = true;
-            this.comboBoxTempo.Items.AddRange(new object[] {
-            "15 min ",
-            "30 min ",
-            "45 min ",
-            "1 hr ",
-            "01:30",
-            "02:00 ",
-            "02:30 ",
-            "03:00 ",
-            "03:30 ",
-            "04:00 ",
-            "04:30 ",
-            "05:00"});
-            this.comboBoxTempo.Location = new System.Drawing.Point(6, 148);
-            this.comboBoxTempo.Name = "comboBoxTempo";
-            this.comboBoxTempo.Size = new System.Drawing.Size(139, 24);
-            this.comboBoxTempo.TabIndex = 25;
-            // 
-            // comboBoxCategoria
-            // 
-            this.comboBoxCategoria.FormattingEnabled = true;
-            this.comboBoxCategoria.Items.AddRange(new object[] {
-            "Manicure ",
-            "Pedicure ",
-            "Depilação ",
-            "Barbearia",
-            "Cabelo ",
-            "Maquiagem ",
-            "Sobrancelhas ",
-            "Spa ",
-            "Massagem ",
-            "Bronzeamento"});
-            this.comboBoxCategoria.Location = new System.Drawing.Point(9, 216);
-            this.comboBoxCategoria.Name = "comboBoxCategoria";
-            this.comboBoxCategoria.Size = new System.Drawing.Size(139, 24);
-            this.comboBoxCategoria.TabIndex = 26;
-            this.comboBoxCategoria.SelectedIndexChanged += new System.EventHandler(this.comboBoxCategoria_SelectedIndexChanged);
-            // 
-            // ButtonFotoServico1
-            // 
-            this.ButtonFotoServico1.Location = new System.Drawing.Point(576, 118);
-            this.ButtonFotoServico1.Name = "ButtonFotoServico1";
-            this.ButtonFotoServico1.Size = new System.Drawing.Size(91, 45);
-            this.ButtonFotoServico1.TabIndex = 27;
-            this.ButtonFotoServico1.Text = "Adicionar Foto";
-            this.ButtonFotoServico1.UseVisualStyleBackColor = true;
-            this.ButtonFotoServico1.Click += new System.EventHandler(this.ButtonFotoServico1_Click);
-            // 
-            // buttonFotoServico2
-            // 
-            this.buttonFotoServico2.Location = new System.Drawing.Point(576, 252);
-            this.buttonFotoServico2.Name = "buttonFotoServico2";
-            this.buttonFotoServico2.Size = new System.Drawing.Size(91, 45);
-            this.buttonFotoServico2.TabIndex = 28;
-            this.buttonFotoServico2.Text = "Adicionar Foto";
-            this.buttonFotoServico2.UseVisualStyleBackColor = true;
-            this.buttonFotoServico2.Click += new System.EventHandler(this.buttonFotoServico2_Click);
-            // 
-            // buttonFotoServico3
-            // 
-            this.buttonFotoServico3.Location = new System.Drawing.Point(576, 386);
-            this.buttonFotoServico3.Name = "buttonFotoServico3";
-            this.buttonFotoServico3.Size = new System.Drawing.Size(91, 45);
-            this.buttonFotoServico3.TabIndex = 29;
-            this.buttonFotoServico3.Text = "Adicionar Foto";
-            this.buttonFotoServico3.UseVisualStyleBackColor = true;
-            this.buttonFotoServico3.Click += new System.EventHandler(this.buttonFotoServico3_Click);
-            // 
             // cadastro_de_serviço
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -361,15 +263,8 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBoxSms;
-        private System.Windows.Forms.TextBox textBoxProfissional;
-        private System.Windows.Forms.TextBox textBoxPrevRetorno;
         private System.Windows.Forms.TextBox textBoxServico;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBoxFotoServico3;
@@ -378,7 +273,6 @@
         private System.Windows.Forms.Button buttonStatusServico;
         private System.Windows.Forms.RichTextBox richTextBoxDescricao;
         private System.Windows.Forms.ComboBox comboBoxCategoria;
-        private System.Windows.Forms.ComboBox comboBoxTempo;
         private System.Windows.Forms.MaskedTextBox maskedTextBoxValor;
         private System.Windows.Forms.Button buttonFotoServico3;
         private System.Windows.Forms.Button buttonFotoServico2;

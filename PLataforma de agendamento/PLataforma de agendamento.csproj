@@ -122,12 +122,6 @@
     <Compile Include="cadastroEmpresa.Designer.cs">
       <DependentUpon>cadastroEmpresa.cs</DependentUpon>
     </Compile>
-    <Compile Include="CadastroProfissional.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CadastroProfissional.Designer.cs">
-      <DependentUpon>CadastroProfissional.cs</DependentUpon>
-    </Compile>
     <Compile Include="telaLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -153,9 +147,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="cadastroEmpresa.resx">
       <DependentUpon>cadastroEmpresa.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="CadastroProfissional.resx">
-      <DependentUpon>CadastroProfissional.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="telaLogin.resx">
       <DependentUpon>telaLogin.cs</DependentUpon>

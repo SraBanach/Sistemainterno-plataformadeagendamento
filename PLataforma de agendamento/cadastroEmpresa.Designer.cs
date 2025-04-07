@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
             this.buttonFotoEmpresa4 = new System.Windows.Forms.Button();
             this.buttonFotoEmpresa3 = new System.Windows.Forms.Button();
             this.buttonFotoEmpresa2 = new System.Windows.Forms.Button();
@@ -43,8 +44,6 @@
             this.textBoxComplemento = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.textBoxNomeContato = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.textBoxNomeFantasia = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
@@ -63,7 +62,7 @@
             this.textBoxRua = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFotoLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFotoEmpresa3)).BeginInit();
@@ -88,8 +87,6 @@
             this.groupBox1.Controls.Add(this.textBoxComplemento);
             this.groupBox1.Controls.Add(this.label14);
             this.groupBox1.Controls.Add(this.label13);
-            this.groupBox1.Controls.Add(this.label12);
-            this.groupBox1.Controls.Add(this.textBoxNomeContato);
             this.groupBox1.Controls.Add(this.label11);
             this.groupBox1.Controls.Add(this.textBoxNomeFantasia);
             this.groupBox1.Controls.Add(this.label9);
@@ -114,6 +111,20 @@
             this.groupBox1.Size = new System.Drawing.Size(1106, 494);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
+            // 
+            // checkedListBox1
+            // 
+            this.checkedListBox1.FormattingEnabled = true;
+            this.checkedListBox1.Items.AddRange(new object[] {
+            "Sobrancelhas",
+            "Cabelo ",
+            "Massagem ",
+            "unha ",
+            "Cilios"});
+            this.checkedListBox1.Location = new System.Drawing.Point(9, 254);
+            this.checkedListBox1.Name = "checkedListBox1";
+            this.checkedListBox1.Size = new System.Drawing.Size(163, 208);
+            this.checkedListBox1.TabIndex = 50;
             // 
             // buttonFotoEmpresa4
             // 
@@ -191,57 +202,31 @@
             this.comboBoxEstado.FormattingEnabled = true;
             this.comboBoxEstado.Items.AddRange(new object[] {
             "AC",
-            "",
             "AL",
-            "",
             "AM",
-            "",
             "AP",
-            "",
             "BA",
-            "",
             "CE",
-            "",
             "DF",
-            "",
             "ES",
-            "",
             "GO",
-            "",
             "MA",
-            "",
             "MG",
-            "",
             "MS",
-            "",
             "MT",
-            "",
             "PA",
-            "",
             "PB",
-            "",
             "PE",
-            "",
             "PI",
-            "",
             "PR",
-            "",
             "RJ",
-            "",
             "RN",
-            "",
             "RO",
-            "",
             "RR",
-            "",
             "RS",
-            "",
             "SC",
-            "",
             "SE",
-            "",
             "SP",
-            "",
             "TO"});
             this.comboBoxEstado.Location = new System.Drawing.Point(527, 172);
             this.comboBoxEstado.Name = "comboBoxEstado";
@@ -295,23 +280,6 @@
             this.label13.Size = new System.Drawing.Size(84, 19);
             this.label13.TabIndex = 33;
             this.label13.Text = "Endereço:";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(236, 317);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(96, 16);
-            this.label12.TabIndex = 32;
-            this.label12.Text = "Nome Contato:";
-            // 
-            // textBoxNomeContato
-            // 
-            this.textBoxNomeContato.Location = new System.Drawing.Point(240, 336);
-            this.textBoxNomeContato.Name = "textBoxNomeContato";
-            this.textBoxNomeContato.Size = new System.Drawing.Size(160, 22);
-            this.textBoxNomeContato.TabIndex = 31;
             // 
             // label11
             // 
@@ -483,19 +451,9 @@
             this.label1.Text = "Cadastro da Empresa";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // checkedListBox1
+            // openFileDialog1
             // 
-            this.checkedListBox1.FormattingEnabled = true;
-            this.checkedListBox1.Items.AddRange(new object[] {
-            "Sobrancelhas",
-            "Cabelo ",
-            "Massagem ",
-            "unha ",
-            "Cilios"});
-            this.checkedListBox1.Location = new System.Drawing.Point(9, 254);
-            this.checkedListBox1.Name = "checkedListBox1";
-            this.checkedListBox1.Size = new System.Drawing.Size(163, 208);
-            this.checkedListBox1.TabIndex = 50;
+            this.openFileDialog1.FileName = "openFileDialog1";
             // 
             // cadastroEmpresa
             // 
@@ -538,8 +496,6 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox textBoxNomeContato;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.TextBox textBoxComplemento;
@@ -553,5 +509,6 @@
         private System.Windows.Forms.Button buttonFotoEmpresa2;
         private System.Windows.Forms.Button buttonFotoEmpresa1;
         private System.Windows.Forms.CheckedListBox checkedListBox1;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
     }
 }

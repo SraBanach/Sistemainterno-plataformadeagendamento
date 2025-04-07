@@ -4,10 +4,12 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Resources.ResXFileRef;
 
 namespace PLataforma_de_agendamento
 {
@@ -34,13 +36,21 @@ namespace PLataforma_de_agendamento
             string conexaoString = "Server=localhost; Port=3306; Database=db_plataformaagendamento; Uid=root; Pwd=;";
 
             // Defina a inserção de registro no Bd
-            string query = "INSERT INTO tb_cad_empresas(razaoSocial, nomeFantasia, cnpj, servicos, horario, telefone, nomeContato, cep, estado, cidade, rua, numero, complemento, sobreEmpresa, fotoEmpresa1, fotoEmpresa2, fotoEmpresa3, fotoLogo) VALUES " + "(@razaoSocial, @nomeFantasia, @cnpj, @servicos, @horario, @telefone, @nomeContato, @cep, @estado, @cidade, @rua, @numero, @complemento, @sobreEmpresa, @fotoEmpresa1, @fotoEmpresa2, @fotoEmpresa3, @fotoLogo)";
+            string query = "INSERT INTO tb_cad_empresas(razaoSocial, nomeFantasia, cnpj, servicos, telefone, cep, estado, cidade, rua, numero, complemento, fotoEmpresa1, fotoEmpresa2, fotoEmpresa3, fotoLogo) VALUES " + "(@razaoSocial, @nomeFantasia, @cnpj, @servicos, @telefone, @cep, @estado, @cidade, @rua, @numero, @complemento, @fotoEmpresa1, @fotoEmpresa2, @fotoEmpresa3, @fotoLogo)";
 
             // Crie conexao com o Bd
             using (MySqlConnection conexao = new MySqlConnection(conexaoString))
             {
                 try
                 {
+
+                    // Converter imagens para byte[]
+                    byte[] imagem1 = pictureBoxFotoEmpresa1.Image != null ? ImageToByteArray(pictureBoxFotoEmpresa1.Image) : null;
+                    byte[] imagem2 = pictureBoxFotoEmpresa2.Image != null ? ImageToByteArray(pictureBoxFotoEmpresa2.Image) : null;
+                    byte[] imagem3 = pictureBoxFotoEmpresa3.Image != null ? ImageToByteArray(pictureBoxFotoEmpresa3.Image) : null;
+                    byte[] imagemLogo = pictureBoxFotoLogo.Image != null ? ImageToByteArray(pictureBoxFotoLogo.Image) : null;
+
+
                     //Abre a conexao
                     conexao.Open();
 
@@ -51,9 +61,12 @@ namespace PLataforma_de_agendamento
                         comando.Parameters.AddWithValue("@razaoSocial", textBoxRazaoSocial.Text);
                         comando.Parameters.AddWithValue("@nomeFantasia", textBoxNomeFantasia.Text);
                         comando.Parameters.AddWithValue("@cnpj", maskedTextBoxCnpj.Text);
-                        comando.Parameters.AddWithValue("@servicos", checkedListBox1.Text);
+                        string servicosSelecionados = string.Join(", ", checkedListBox1.CheckedItems.Cast<string>());
+                        comando.Parameters.AddWithValue("@servicos", servicosSelecionados);
+                        //checkedListBox1.CheckedItems → pega os itens marcados.
+                        //Cast<string>() → converte os itens para string.
+                        //string.Join(", ", ...) → junta todos os itens em uma única string separada por vírgulas.
                         comando.Parameters.AddWithValue("@telefone", maskedTextBoxTelefone.Text);
-                        comando.Parameters.AddWithValue("@nomeContato", textBoxNomeContato.Text);
                         comando.Parameters.AddWithValue("@cep", maskedTextBoxCep.Text);
                         comando.Parameters.AddWithValue("@estado", comboBoxEstado.Text);
                         comando.Parameters.AddWithValue("@cidade", textBoxCidade.Text);
@@ -61,10 +74,11 @@ namespace PLataforma_de_agendamento
                         comando.Parameters.AddWithValue("@numero", textBoxNumero.Text);
                         comando.Parameters.AddWithValue("@complemento", textBoxComplemento.Text);
 
-                        comando.Parameters.AddWithValue("@fotoEmpresa1", pictureBoxFotoEmpresa1.Text);
-                        comando.Parameters.AddWithValue("@fotoEmpresa2", pictureBoxFotoEmpresa2.Text);
-                        comando.Parameters.AddWithValue("@fotoEmpresa3", pictureBoxFotoEmpresa3.Text);
-                        comando.Parameters.AddWithValue("@fotoLogo", pictureBoxFotoLogo.Text);
+                        // Adiciona como parâmetros
+                        comando.Parameters.AddWithValue("@fotoEmpresa1", ImageToByteArray(pictureBoxFotoEmpresa1.Image));
+                        comando.Parameters.AddWithValue("@fotoEmpresa2", ImageToByteArray(pictureBoxFotoEmpresa2.Image));
+                        comando.Parameters.AddWithValue("@fotoEmpresa3", ImageToByteArray(pictureBoxFotoEmpresa3.Image));
+                        comando.Parameters.AddWithValue("@fotoLogo", ImageToByteArray(pictureBoxFotoLogo.Image));
 
 
                         //Executeo comando de inserção
@@ -77,7 +91,6 @@ namespace PLataforma_de_agendamento
                         maskedTextBoxCnpj.Text = "";
                         checkedListBox1.Text = "";
                         maskedTextBoxTelefone.Text = "";
-                        textBoxNomeContato.Text = "";
                         maskedTextBoxCep.Text = "";
                         comboBoxEstado.Text = "";
                         textBoxCidade.Text = "";
@@ -141,5 +154,15 @@ namespace PLataforma_de_agendamento
         {
 
         }
+
+        private byte[] ImageToByteArray(Image imagem)
+        {
+            using (MemoryStream ms = new MemoryStream())
+            {
+                imagem.Save(ms, imagem.RawFormat);
+                return ms.ToArray();
+            }
+        }
     }
+
 }

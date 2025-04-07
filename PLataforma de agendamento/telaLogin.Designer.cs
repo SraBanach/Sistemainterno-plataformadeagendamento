@@ -30,15 +30,14 @@
         {
             this.components = new System.ComponentModel.Container();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.labelMenssagem = new System.Windows.Forms.Label();
             this.linkLabelMostrarSenha = new System.Windows.Forms.LinkLabel();
-            this.linkLabelEsqueceuSenha = new System.Windows.Forms.LinkLabel();
             this.buttonEntrar = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.textBoxSenha = new System.Windows.Forms.TextBox();
             this.textBoxUsuario = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.labelMenssagem = new System.Windows.Forms.Label();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
@@ -49,7 +48,6 @@
             this.groupBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.groupBox1.Controls.Add(this.labelMenssagem);
             this.groupBox1.Controls.Add(this.linkLabelMostrarSenha);
-            this.groupBox1.Controls.Add(this.linkLabelEsqueceuSenha);
             this.groupBox1.Controls.Add(this.buttonEntrar);
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.label7);
@@ -63,6 +61,14 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
+            // labelMenssagem
+            // 
+            this.labelMenssagem.AutoSize = true;
+            this.labelMenssagem.Location = new System.Drawing.Point(205, 222);
+            this.labelMenssagem.Name = "labelMenssagem";
+            this.labelMenssagem.Size = new System.Drawing.Size(0, 13);
+            this.labelMenssagem.TabIndex = 22;
+            // 
             // linkLabelMostrarSenha
             // 
             this.linkLabelMostrarSenha.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -75,17 +81,6 @@
             this.linkLabelMostrarSenha.TabStop = true;
             this.linkLabelMostrarSenha.Text = "Mostrar Senha";
             this.linkLabelMostrarSenha.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelMostrarSenha_LinkClicked);
-            // 
-            // linkLabelEsqueceuSenha
-            // 
-            this.linkLabelEsqueceuSenha.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.linkLabelEsqueceuSenha.AutoSize = true;
-            this.linkLabelEsqueceuSenha.Location = new System.Drawing.Point(192, 276);
-            this.linkLabelEsqueceuSenha.Name = "linkLabelEsqueceuSenha";
-            this.linkLabelEsqueceuSenha.Size = new System.Drawing.Size(113, 13);
-            this.linkLabelEsqueceuSenha.TabIndex = 20;
-            this.linkLabelEsqueceuSenha.TabStop = true;
-            this.linkLabelEsqueceuSenha.Text = "Esqueceu sua senha?";
             // 
             // buttonEntrar
             // 
@@ -127,6 +122,7 @@
             this.textBoxSenha.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.textBoxSenha.Location = new System.Drawing.Point(198, 181);
             this.textBoxSenha.Name = "textBoxSenha";
+            this.textBoxSenha.PasswordChar = '*';
             this.textBoxSenha.Size = new System.Drawing.Size(139, 20);
             this.textBoxSenha.TabIndex = 4;
             // 
@@ -148,14 +144,6 @@
             this.label1.Size = new System.Drawing.Size(185, 26);
             this.label1.TabIndex = 0;
             this.label1.Text = "Acesso ao sistema";
-            // 
-            // labelMenssagem
-            // 
-            this.labelMenssagem.AutoSize = true;
-            this.labelMenssagem.Location = new System.Drawing.Point(205, 222);
-            this.labelMenssagem.Name = "labelMenssagem";
-            this.labelMenssagem.Size = new System.Drawing.Size(0, 13);
-            this.labelMenssagem.TabIndex = 22;
             // 
             // errorProvider1
             // 
@@ -187,7 +175,6 @@
         private System.Windows.Forms.TextBox textBoxSenha;
         private System.Windows.Forms.TextBox textBoxUsuario;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.LinkLabel linkLabelEsqueceuSenha;
         private System.Windows.Forms.LinkLabel linkLabelMostrarSenha;
         private System.Windows.Forms.Label labelMenssagem;
         private System.Windows.Forms.ErrorProvider errorProvider1;
