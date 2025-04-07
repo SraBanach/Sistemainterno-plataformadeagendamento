@@ -39,6 +39,8 @@ namespace PLataforma_de_agendamento
         {
             bancoClientes form = new bancoClientes();
             form.ShowDialog();
+
+
         }
 
         private void dataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
