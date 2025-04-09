@@ -28,7 +28,7 @@ namespace PLataforma_de_agendamento
         private void buttonStatusServico_Click(object sender, EventArgs e)
         {
             // Defina sua string de conexão com o banco 
-            string conexaoString = "Server=localhost; Port=3306; Database=db_plataformaagendamento; Uid=root; Pwd=;";
+            string conexaoString = "Server=82.180.153.103; Port=3306; Database=u667494514_db_plataforma; Uid=u667494514_kenya; Pwd=;Hades.4289";
 
             // Defina a inserção de registro no Bd
             string query = "INSERT INTO tb_cad_servicos(servico, categoria, valor, descricao, foto_servico1, foto_servico2, foto_servico3) VALUES " + "(@servico, @categoria, @valor, @descricao, @foto_servico1, @foto_servico2, @foto_servico3)";

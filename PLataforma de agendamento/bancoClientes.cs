@@ -21,7 +21,7 @@ namespace PLataforma_de_agendamento
         private void buttonListarClientes_Click(object sender, EventArgs e)
         {
             // Defina sua string de conexão com o banco 
-            string conectionString = "Server=localhost; Port=3306; Database=db_plataformaagendamento; Uid=root; Pwd=;";
+            string conectionString = "Server=82.180.153.103;Port=3306;Database=u667494514_db_plataforma;Uid=u667494514_kenya;Pwd=Hades.4289;Convert Zero Datetime=True;";
 
             try
             {       //Cria uma conexao com o banco de dados MySql
@@ -31,7 +31,7 @@ namespace PLataforma_de_agendamento
                     consulta.Open();
 
                     //consulta SQL  para selecionar clientes
-                    string query = "SELECT id_usuario, nome, telefone, dat_nasc, cpf FROM tb_cad_usuario";
+                    string query = "SELECT id_usuario, nome, telefone, cpf FROM tb_cad_usuario";
 
                     //Cria o comando MySql
                     using (MySqlCommand cmd = new MySqlCommand(query, consulta))
@@ -69,7 +69,7 @@ namespace PLataforma_de_agendamento
 
                 if (result == DialogResult.Yes)
                 {
-                    string connectionString = "Server=localhost; Port=3306; Database=db_plataformaagendamento; Uid=root; Pwd=;";
+                    string connectionString = "Server=82.180.153.103; Port=3306; Database=u667494514_db_plataforma; Uid=u667494514_kenya; Pwd=;Hades.4289;";
 
                     try
                     {

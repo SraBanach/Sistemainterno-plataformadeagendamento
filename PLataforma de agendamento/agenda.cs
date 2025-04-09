@@ -21,8 +21,7 @@ namespace PLataforma_de_agendamento
         private void buttonListarAgenda_Click(object sender, EventArgs e)
         {
             // Defina sua string de conexão com o banco 
-            string conectionString = "Server=localhost; Port=3306; Database=db_plataformaagendamento; Uid=root; Pwd=;Convert Zero Datetime=True";
-
+            string conectionString = "Server=82.180.153.103;Port=3306;Database=u667494514_db_plataforma;Uid=u667494514_kenya;Pwd=Hades.4289;Convert Zero Datetime=True;";
             try
             {       //Cria uma conexao com o banco de dados MySql
                 using (MySqlConnection consulta = new MySqlConnection(conectionString))
@@ -31,7 +30,7 @@ namespace PLataforma_de_agendamento
                     consulta.Open();
 
                     //consulta SQL  para selecionar clientes
-                    string query = "SELECT id, profissional, servico, valor, horario, data_agendamento, observacoes FROM tb_agendamento";
+                    string query = "SELECT id, servico, valor, horario, data_agendamento, observacoes FROM tb_agendamento";
 
                     //Cria o comando MySql
                     using (MySqlCommand cmd = new MySqlCommand(query, consulta))
@@ -73,7 +72,7 @@ namespace PLataforma_de_agendamento
 
                 if (result == DialogResult.Yes)
                 {
-                    string connectionString = "Server=localhost; Port=3306; Database=db_plataformaagendamento; Uid=root; Pwd=; Convert Zero Datetime=True ";
+                    string connectionString = "Server=82.180.153.103;Port=3306;Database=u667494514_db_plataforma;Uid=u667494514_kenya;Pwd=Hades.4289;Convert Zero Datetime=True;";
 
                     try
                     {
@@ -105,14 +104,14 @@ namespace PLataforma_de_agendamento
 
                     catch (Exception ex)
                     {
-                        MessageBox.Show("Erro ao listar os carros:" + ex.Message);
+                        MessageBox.Show("Erro ao listar os agenda:" + ex.Message);
                     }
 
                 }
 
                 else
                 {
-                    MessageBox.Show("Por favor, selecione um carro para excluir!");
+                    MessageBox.Show("Por favor, selecione um horario para excluir!");
                 }
             }
         }
