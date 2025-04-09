@@ -69,8 +69,7 @@ namespace PLataforma_de_agendamento
 
                 if (result == DialogResult.Yes)
                 {
-                    string connectionString = "Server=82.180.153.103; Port=3306; Database=u667494514_db_plataforma; Uid=u667494514_kenya; Pwd=;Hades.4289;";
-
+                    string connectionString = "Server=82.180.153.103;Port=3306;Database=u667494514_db_plataforma;Uid=u667494514_kenya;Pwd=Hades.4289;Convert Zero Datetime=True;";
                     try
                     {
                         //Cria uma conexão com o banco de dados Mysql
